@@ -1,0 +1,779 @@
+fileFormatVersion: 2
+guid: 9092074b88b31fc4894e2e98748b23ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -534242207500288312
+    second: Assets 1_0
+  - first:
+      213: -7561596572177719706
+    second: Assets 1_1
+  - first:
+      213: -4396061252477769625
+    second: Assets 1_2
+  - first:
+      213: -3637176468013677832
+    second: Assets 1_3
+  - first:
+      213: 8866540013290690473
+    second: Assets 1_4
+  - first:
+      213: 4447425773683075185
+    second: Assets 1_5
+  - first:
+      213: -7499340820472659648
+    second: Assets 1_6
+  - first:
+      213: -2191863938963501123
+    second: Assets 1_7
+  - first:
+      213: 2232637020889009645
+    second: Assets 1_8
+  - first:
+      213: -3038308683442897569
+    second: Assets 1_9
+  - first:
+      213: -3261552998882442266
+    second: Assets 1_10
+  - first:
+      213: 4011534777681452629
+    second: Assets 1_11
+  - first:
+      213: -2045606447612967098
+    second: Assets 1_12
+  - first:
+      213: -7655942015774215046
+    second: Assets 1_13
+  - first:
+      213: -3575039353988869396
+    second: Assets 1_14
+  - first:
+      213: -8719215850737061267
+    second: Assets 1_15
+  - first:
+      213: -6248876290649166771
+    second: Assets 1_16
+  - first:
+      213: 134020985348368567
+    second: Assets 1_17
+  - first:
+      213: -927750458624527792
+    second: Assets 1_18
+  - first:
+      213: 236833370562257942
+    second: Assets 1_19
+  - first:
+      213: -4032971951200114611
+    second: Assets 1_20
+  - first:
+      213: 3373457352949993609
+    second: Assets 1_21
+  - first:
+      213: -3931278159848372552
+    second: Assets 1_22
+  - first:
+      213: -3614501008633289006
+    second: Assets 1_23
+  - first:
+      213: -1413212492402760468
+    second: Assets 1_24
+  - first:
+      213: 7036810486176189389
+    second: Assets 1_25
+  - first:
+      213: -8865323282526993633
+    second: Assets 1_26
+  - first:
+      213: -8285684720851623157
+    second: Assets 1_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tara Luto! Logo
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 763
+        width: 1628
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cebce5fa8df598f0800000000000000
+      internalID: -534242207500288312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Close
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 907
+        width: 277
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768243b059d0ef2c0800000000000000
+      internalID: -4396061252477769625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Start Game Button
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 585
+        width: 682
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f282aed547268dc0800000000000000
+      internalID: -3637176468013677832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volume Bar None
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 687
+        width: 934
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a79af64a274c0b70800000000000000
+      internalID: 8866540013290690473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Full
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 632
+        width: 207
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178eb4d7d2e68bd30800000000000000
+      internalID: 4447425773683075185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Empty
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 632
+        width: 207
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041042ac14dfce790800000000000000
+      internalID: -7499340820472659648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volume Bar Full
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 613
+        width: 934
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf871a4c5fe491e0800000000000000
+      internalID: -2191863938963501123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Credits Button
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 447
+        width: 606
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedc97e9a8bebfe10800000000000000
+      internalID: 2232637020889009645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Choose A Recipe
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 472
+        width: 687
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5db66d9952c5d5d0800000000000000
+      internalID: -3038308683442897569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart 1
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 363
+        width: 164
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647c7c326cb8c93e0800000000000000
+      internalID: -2045606447612967098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart 2
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 352
+        width: 167
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a743ac0bc41a0c590800000000000000
+      internalID: -7655942015774215046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exit Button 1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 300
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2937f16a8e26ec0800000000000000
+      internalID: -3575039353988869396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings Button
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 300
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62bcd0516f1ff680800000000000000
+      internalID: -8719215850737061267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Star Full
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 307
+        width: 112
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4cee722f188749a0800000000000000
+      internalID: -6248876290649166771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Star Empty
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 306
+        width: 108
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8232840632cd100800000000000000
+      internalID: 134020985348368567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Try Again Button
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 316
+        width: 372
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052ba719fd7ff13f0800000000000000
+      internalID: -927750458624527792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Done Button
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 316
+        width: 372
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614625b12b6694300800000000000000
+      internalID: 236833370562257942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swirl 1
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 179
+        width: 129
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d486a93c0610808c0800000000000000
+      internalID: -4032971951200114611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zigzag 1
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 230
+        width: 110
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9809383d69de0de20800000000000000
+      internalID: 3373457352949993609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exit Button 2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 161
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b68cf8a75b4179c0800000000000000
+      internalID: -3931278159848372552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exit Button 3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 143
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d62f1cab76b6ddc0800000000000000
+      internalID: -3614501008633289006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock Icon
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 80
+        width: 189
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce46036c9b2436ce0800000000000000
+      internalID: -1413212492402760468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proceed Button
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 173
+        width: 372
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb8644cad5c7a160800000000000000
+      internalID: 7036810486176189389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swirl 2
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 199
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f138afde17b08f480800000000000000
+      internalID: -8865323282526993633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zigzag 2
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 82
+        width: 136
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03e1c455a5530d80800000000000000
+      internalID: -8285684720851623157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6d860e582d6cfa44c8251bec9df169d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Assets 1_1: -7561596572177719706
+      Assets 1_10: -3261552998882442266
+      Assets 1_11: 4011534777681452629
+      Choose A Recipe: -3038308683442897569
+      Clock Icon: -1413212492402760468
+      Credits Button: 2232637020889009645
+      Done Button: 236833370562257942
+      Exit Button 1: -3575039353988869396
+      Exit Button 2: -3931278159848372552
+      Exit Button 3: -3614501008633289006
+      Heart 1: -2045606447612967098
+      Heart 2: -7655942015774215046
+      Proceed Button: 7036810486176189389
+      Settings Button: -8719215850737061267
+      Settings Close: -4396061252477769625
+      Small Star Empty: 134020985348368567
+      Small Star Full: -6248876290649166771
+      Star Empty: -7499340820472659648
+      Star Full: 4447425773683075185
+      Start Game Button: -3637176468013677832
+      Swirl 1: -4032971951200114611
+      Swirl 2: -8865323282526993633
+      Tara Luto! Logo: -534242207500288312
+      Try Again Button: -927750458624527792
+      Volume Bar Full: -2191863938963501123
+      Volume Bar None: 8866540013290690473
+      Zigzag 1: 3373457352949993609
+      Zigzag 2: -8285684720851623157
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -27,7 +27,7 @@ public class MainMenuController : MonoBehaviour
         startGameButton = uiDocument.rootVisualElement.Q<Button>("StartGameButton");
         settingsButton = uiDocument.rootVisualElement.Q<Button>("SettingsButton");
         creditsButton = uiDocument.rootVisualElement.Q<Button>("CreditsButton");
-        exitGameButton = uiDocument.rootVisualElement.Q<Button>("exitGameButton");
+        exitGameButton = uiDocument.rootVisualElement.Q<Button>("ExitGameButton");
     }
 
     private void Start()

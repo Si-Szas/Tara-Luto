@@ -565,6 +565,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2398904880239566162, guid: d0356d718e69d784e80215ec9908d090, type: 3}
+      propertyPath: creditsObject
+      value: 
+      objectReference: {fileID: 765811243}
+    - target: {fileID: 2398904880239566162, guid: d0356d718e69d784e80215ec9908d090, type: 3}
+      propertyPath: exitGameObject
+      value: 
+      objectReference: {fileID: 77962255}
+    - target: {fileID: 2398904880239566162, guid: d0356d718e69d784e80215ec9908d090, type: 3}
+      propertyPath: settingsObject
+      value: 
+      objectReference: {fileID: 87840136}
     - target: {fileID: 8303269742674540644, guid: d0356d718e69d784e80215ec9908d090, type: 3}
       propertyPath: m_Name
       value: Main Menu
