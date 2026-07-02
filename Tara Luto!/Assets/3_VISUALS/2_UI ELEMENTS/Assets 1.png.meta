@@ -153,7 +153,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -730,6 +730,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: X Icon
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 161
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24575f5b83eee14478bf3ebddbfeb4e0
+      internalID: 461992804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -770,6 +792,7 @@ TextureImporter:
       Try Again Button: -927750458624527792
       Volume Bar Full: -2191863938963501123
       Volume Bar None: 8866540013290690473
+      X Icon: 461992804
       Zigzag 1: 3373457352949993609
       Zigzag 2: -8285684720851623157
   mipmapLimitGroupName: 

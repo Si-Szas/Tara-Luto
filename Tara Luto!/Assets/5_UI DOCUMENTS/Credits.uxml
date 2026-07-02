@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-image: none; background-color: rgba(0, 0, 0, 0.69);">
+        <ui:VisualElement name="Credits" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/3_VISUALS/1_BACKGROUNDS/Main%20Menu/Credits%20Text%20WO%20Contribution.png?fileID=21300000&amp;guid=cd04d9afb55bebc4a9a9c46173c7dd7d&amp;type=3#Credits Text WO Contribution&quot;); flex-direction: column; align-items: stretch; justify-content: space-evenly;">
+            <ui:VisualElement name="Top" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="TopLeft" style="flex-grow: 1;"/>
+                <ui:VisualElement name="TopMiddle" style="flex-grow: 1;"/>
+                <ui:VisualElement name="TopRight" style="flex-grow: 1; flex-direction: row; align-items: stretch; justify-content: center;">
+                    <ui:Button text="" name="CloseCreditsButton" style="background-color: rgba(188, 188, 188, 0); background-image: url(&quot;project://database/Assets/3_VISUALS/2_UI%20ELEMENTS/Assets%201.png?fileID=461992804&amp;guid=9092074b88b31fc4894e2e98748b23ab&amp;type=3#X Icon&quot;); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; translate: 0 228px; width: 90px; height: 90px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Middle" style="flex-grow: 1; -unity-text-align: upper-left; flex-direction: column; align-items: center; justify-content: center; align-self: stretch;">
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" name="MeganContribution" style="-unity-font-definition: url(&quot;project://database/Assets/3_VISUALS/4_FONTS/Betm%20Rounded/betmrounded-medium.otf?fileID=12800000&amp;guid=4251a8b7f1923ae4dbb0ac7b0652da0f&amp;type=3#betmrounded-medium&quot;); color: rgb(151, 94, 178); font-size: 32px; white-space: normal; width: 820px; translate: 70px 70px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Bottom" style="flex-grow: 1; align-items: center; justify-content: space-between; align-self: stretch; flex-direction: column;">
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" name="YzaContribution" style="-unity-font-definition: url(&quot;project://database/Assets/3_VISUALS/4_FONTS/Betm%20Rounded/betmrounded-medium.otf?fileID=12800000&amp;guid=4251a8b7f1923ae4dbb0ac7b0652da0f&amp;type=3#betmrounded-medium&quot;); color: rgb(151, 94, 178); font-size: 32px; white-space: normal; width: 820px; translate: 70px 25px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

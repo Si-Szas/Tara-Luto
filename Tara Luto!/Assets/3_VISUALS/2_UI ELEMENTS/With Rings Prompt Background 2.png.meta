@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: ad41479735147f643982adabb216e85b
+guid: 4ce115c48b005f343808d20d411802fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2313417581062864416
-    second: Assets 7_0
-  - first:
-      213: -7762300187882102225
-    second: Assets 7_1
-  - first:
-      213: 5606022497701594508
-    second: Assets 7_2
+      213: -5815451710688494640
+    second: With Rings Prompt Background 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -78,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Assets 7_0
+      name: With Rings Prompt Background 2_0
       rect:
         serializedVersion: 2
-        x: 140
-        y: 133
-        width: 1287
-        height: 797
+        x: 374
+        y: 77
+        width: 1534
+        height: 903
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02e35607809ea1020800000000000000
-      internalID: 2313417581062864416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets 7_1
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 587
-        width: 396
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f22e6550b15c64490800000000000000
-      internalID: -7762300187882102225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets 7_2
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 394
-        width: 396
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c850a5a72c79ccd40800000000000000
-      internalID: 5606022497701594508
+      spriteID: 0db79ff0b7d5b4fa0800000000000000
+      internalID: -5815451710688494640
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Assets 7_0: 2313417581062864416
-      Assets 7_1: -7762300187882102225
-      Assets 7_2: 5606022497701594508
+      With Rings Prompt Background 2_0: -5815451710688494640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

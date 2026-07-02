@@ -78,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Assets 4_0
+      name: Credits Background
       rect:
         serializedVersion: 2
         x: 16
@@ -114,7 +114,7 @@ TextureImporter:
         width: 1629
         height: 959
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,7 +128,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets 4_1
+      name: Phone Icon Tilt Down
       rect:
         serializedVersion: 2
         x: 1871
@@ -136,7 +136,7 @@ TextureImporter:
         width: 296
         height: 447
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets 4_2
+      name: Phone Icon Tilt Up
       rect:
         serializedVersion: 2
         x: 1841
@@ -158,7 +158,7 @@ TextureImporter:
         width: 353
         height: 398
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: de5dc46afe57063419b231ea065dba76
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Assets 4_0: 3301505798884237082
-      Assets 4_1: 9074815451410453780
-      Assets 4_2: -1537837013920906859
+      Credits Background: 3301505798884237082
+      Phone Icon Tilt Down: 9074815451410453780
+      Phone Icon Tilt Up: -1537837013920906859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
