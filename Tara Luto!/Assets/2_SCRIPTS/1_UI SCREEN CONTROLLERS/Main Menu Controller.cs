@@ -63,7 +63,7 @@ public class MainMenuController : MonoBehaviour
 
     private void ExitGame()
     {
-        Debug.Log("Exited Game");
+        Debug.Log("Viewing Exit Game Prompt");
         exitGameObject.SetActive(true);
     }
 

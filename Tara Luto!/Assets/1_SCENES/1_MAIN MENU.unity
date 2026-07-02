@@ -414,6 +414,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7066000094609189958, guid: 9d7a5240aa516a14894d30f468820790, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9181082101142009367, guid: 9d7a5240aa516a14894d30f468820790, type: 3}
       propertyPath: uiDocument
       value: 
@@ -479,6 +483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 8478690669349543932, guid: 7adb3a06eb2c67247889d0c040a77a16, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -543,6 +551,10 @@ PrefabInstance:
     - target: {fileID: 7635229560614303025, guid: e02c5e27ea349124e8481aad54b8e5c8, type: 3}
       propertyPath: m_Name
       value: Exit Game Prompt
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297799686220793946, guid: e02c5e27ea349124e8481aad54b8e5c8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
