@@ -129,6 +129,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7677007690603600392, guid: 7adb3a06eb2c67247889d0c040a77a16, type: 3}
   m_PrefabInstance: {fileID: 5563602337189848383}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &463749395 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8297799686220793946, guid: e02c5e27ea349124e8481aad54b8e5c8, type: 3}
+  m_PrefabInstance: {fileID: 8599510384538180911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+--- !u!114 &621883763 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7066000094609189958, guid: 9d7a5240aa516a14894d30f468820790, type: 3}
+  m_PrefabInstance: {fileID: 3911141036882852412}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
 --- !u!1 &765811243 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3365882780254240475, guid: 9d7a5240aa516a14894d30f468820790, type: 3}
@@ -392,6 +414,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9181082101142009367, guid: 9d7a5240aa516a14894d30f468820790, type: 3}
+      propertyPath: uiDocument
+      value: 
+      objectReference: {fileID: 621883763}
+    - target: {fileID: 9181082101142009367, guid: 9d7a5240aa516a14894d30f468820790, type: 3}
+      propertyPath: creditsParent
+      value: 
+      objectReference: {fileID: 765811243}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -462,6 +492,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 296844196660536374, guid: e02c5e27ea349124e8481aad54b8e5c8, type: 3}
+      propertyPath: uiDocument
+      value: 
+      objectReference: {fileID: 463749395}
+    - target: {fileID: 296844196660536374, guid: e02c5e27ea349124e8481aad54b8e5c8, type: 3}
+      propertyPath: exitGamePromptParent
+      value: 
+      objectReference: {fileID: 77962255}
     - target: {fileID: 4733067559189496289, guid: e02c5e27ea349124e8481aad54b8e5c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

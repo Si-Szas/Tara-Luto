@@ -1,16 +1,35 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CreditsController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("References")]
+    [SerializeField] private UIDocument uiDocument;
+    [SerializeField] private GameObject creditsParent;
+
+    private Button closeCredits;
+
+    private void OnEnable()
     {
-        
+        if (!uiDocument)
+        {
+            uiDocument = FindFirstObjectByType<UIDocument>();
+        }
+
+        closeCredits = uiDocument.rootVisualElement.Q<Button>("CloseCreditsButton");
+
+        SetUpCredits();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SetUpCredits()
     {
-        
+        closeCredits.clicked += CloseCredits;
     }
+
+    private void CloseCredits()
+    {
+        Debug.Log("Closed Credits");
+        creditsParent.SetActive(false);
+    }
+
 }
