@@ -7,7 +7,7 @@ public class CreditsController : MonoBehaviour
     [SerializeField] private UIDocument uiDocument;
     [SerializeField] private GameObject creditsParent;
 
-    private Button closeCredits;
+    private Button closeCreditsButton;
 
     private void OnEnable()
     {
@@ -16,14 +16,14 @@ public class CreditsController : MonoBehaviour
             uiDocument = FindFirstObjectByType<UIDocument>();
         }
 
-        closeCredits = uiDocument.rootVisualElement.Q<Button>("CloseCreditsButton");
+        closeCreditsButton = uiDocument.rootVisualElement.Q<Button>("CloseCreditsButton");
 
         SetUpCredits();
     }
 
     private void SetUpCredits()
     {
-        closeCredits.clicked += CloseCredits;
+        closeCreditsButton.clicked += CloseCredits;
     }
 
     private void CloseCredits()

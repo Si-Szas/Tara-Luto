@@ -156,6 +156,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3365882780254240475, guid: 9d7a5240aa516a14894d30f468820790, type: 3}
   m_PrefabInstance: {fileID: 3911141036882852412}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484463557 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8478690669349543932, guid: 7adb3a06eb2c67247889d0c040a77a16, type: 3}
+  m_PrefabInstance: {fileID: 5563602337189848383}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
 --- !u!1 &1779444820
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +490,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5007587381800655436, guid: 7adb3a06eb2c67247889d0c040a77a16, type: 3}
+      propertyPath: uiDocument
+      value: 
+      objectReference: {fileID: 1484463557}
+    - target: {fileID: 5007587381800655436, guid: 7adb3a06eb2c67247889d0c040a77a16, type: 3}
+      propertyPath: settingsParent
+      value: 
+      objectReference: {fileID: 87840136}
     - target: {fileID: 7677007690603600392, guid: 7adb3a06eb2c67247889d0c040a77a16, type: 3}
       propertyPath: m_Name
       value: Settings

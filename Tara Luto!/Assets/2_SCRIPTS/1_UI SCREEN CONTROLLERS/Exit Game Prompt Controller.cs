@@ -7,8 +7,8 @@ public class ExitGamePromptController : MonoBehaviour
     [SerializeField] private UIDocument uiDocument;
     [SerializeField] private GameObject exitGamePromptParent;
 
-    private Button closeExitPrompt;
-    private Button confirmExit;
+    private Button closeExitPromptButton;
+    private Button confirmExitButton;
 
     private void OnEnable()
     {
@@ -17,16 +17,16 @@ public class ExitGamePromptController : MonoBehaviour
             uiDocument = FindFirstObjectByType<UIDocument>();
         }
 
-        closeExitPrompt = uiDocument.rootVisualElement.Q<Button>("CloseExitPromptButton");
-        confirmExit = uiDocument.rootVisualElement.Q<Button>("ConfirmExitButton");
+        closeExitPromptButton = uiDocument.rootVisualElement.Q<Button>("CloseExitPromptButton");
+        confirmExitButton = uiDocument.rootVisualElement.Q<Button>("ConfirmExitButton");
         
         SetUpExitGamePrompt();
     }
 
     private void SetUpExitGamePrompt()
     {
-        confirmExit.clicked += ExitGame;
-        closeExitPrompt.clicked += CloseExitPrompt;
+        confirmExitButton.clicked += ExitGame;
+        closeExitPromptButton.clicked += CloseExitPrompt;
     }
 
     private void CloseExitPrompt()

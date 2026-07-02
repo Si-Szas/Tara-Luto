@@ -1,5 +1,5 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Background" style="flex-grow: 1; background-image: none; background-color: rgba(0, 0, 0, 0.69);">
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-image: none; background-color: rgba(0, 0, 0, 0.78);">
         <ui:VisualElement name="Credits" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/3_VISUALS/1_BACKGROUNDS/Main%20Menu/Credits%20Text%20WO%20Contribution.png?fileID=21300000&amp;guid=cd04d9afb55bebc4a9a9c46173c7dd7d&amp;type=3#Credits Text WO Contribution&quot;); flex-direction: column; align-items: stretch; justify-content: space-evenly;">
             <ui:VisualElement name="Top" style="flex-grow: 1; flex-direction: row;">
                 <ui:VisualElement name="TopLeft" style="flex-grow: 1;"/>
