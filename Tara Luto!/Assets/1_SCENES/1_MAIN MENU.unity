@@ -707,6 +707,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2398904880239566162, guid: d0356d718e69d784e80215ec9908d090, type: 3}
+      propertyPath: sceneToStart
+      value: 2_GAME
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398904880239566162, guid: d0356d718e69d784e80215ec9908d090, type: 3}
       propertyPath: creditsObject
       value: 
       objectReference: {fileID: 765811243}
