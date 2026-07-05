@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3325a9b1b66ab2e428453e727f29e9e6
+guid: d372754c956109a4da01e11b67cd8298
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3453879840564805266
-    second: Leche Flan Pan_0
-  - first:
-      213: -3241958555446163910
-    second: Leche Flan Pan_1
+      213: -3051863748827842547
+    second: Open Book_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Leche Flan Pan_0
+      name: Open Book_0
       rect:
         serializedVersion: 2
-        x: 176
-        y: 219
-        width: 964
-        height: 733
+        x: 80
+        y: 86
+        width: 2252
+        height: 848
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,30 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e61804e959a5110d0800000000000000
-      internalID: -3453879840564805266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leche Flan Pan_1
-      rect:
-        serializedVersion: 2
-        x: 1191
-        y: 219
-        width: 964
-        height: 733
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a36c716dedf3203d0800000000000000
-      internalID: -3241958555446163910
+      spriteID: d087934071a95a5d0800000000000000
+      internalID: -3051863748827842547
       vertices: []
       indices: 
       edges: []
@@ -199,8 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Leche Flan Pan_0: -3453879840564805266
-      Leche Flan Pan_1: -3241958555446163910
+      Open Book_0: -3051863748827842547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 3325a9b1b66ab2e428453e727f29e9e6
+guid: 1760a158b33528b4d85145363e6488d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3453879840564805266
-    second: Leche Flan Pan_0
+      213: -280772251508076775
+    second: Icon Foreground_0
   - first:
-      213: -3241958555446163910
-    second: Leche Flan Pan_1
+      213: 2851799193539505905
+    second: Icon Foreground_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 110
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -142,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Leche Flan Pan_0
+      name: Icon Foreground_0
       rect:
         serializedVersion: 2
-        x: 176
-        y: 219
-        width: 964
-        height: 733
+        x: 21
+        y: 78
+        width: 390
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e61804e959a5110d0800000000000000
-      internalID: -3453879840564805266
+      spriteID: 91f0316ff1f7a1cf0800000000000000
+      internalID: -280772251508076775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leche Flan Pan_1
+      name: Icon Foreground_1
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 219
-        width: 964
-        height: 733
+        x: 36
+        y: 210
+        width: 363
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a36c716dedf3203d0800000000000000
-      internalID: -3241958555446163910
+      spriteID: 1feeaadc140a39720800000000000000
+      internalID: 2851799193539505905
       vertices: []
       indices: 
       edges: []
@@ -199,8 +199,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Leche Flan Pan_0: -3453879840564805266
-      Leche Flan Pan_1: -3241958555446163910
+      Icon Foreground_0: -280772251508076775
+      Icon Foreground_1: 2851799193539505905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
