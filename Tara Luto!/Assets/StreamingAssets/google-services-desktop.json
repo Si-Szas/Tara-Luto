@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "801536389787",
+    "project_id": "tara-luto",
+    "storage_bucket": "tara-luto.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801536389787:android:ca6809aca8898213bb4c3e",
+        "android_client_info": {
+          "package_name": "com.SoroS.TaraLuto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDACw3iuHhWoBiuwMrkNBA2VN7DU0wTB9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
