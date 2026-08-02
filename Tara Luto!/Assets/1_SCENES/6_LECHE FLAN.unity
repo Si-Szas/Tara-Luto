@@ -1148,6 +1148,7 @@ GameObject:
   - component: {fileID: 1818487688}
   - component: {fileID: 1818487690}
   - component: {fileID: 1818487691}
+  - component: {fileID: 1818487692}
   m_Layer: 0
   m_Name: Bowl
   m_TagString: Collide With
@@ -1275,6 +1276,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9, y: 5.8638844}
   m_EdgeRadius: 0
+--- !u!114 &1818487692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818487687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d494f9f8744c1a469ea1cf4ae156ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollideWith
+  objectToCollideWith: {fileID: 917602172}
+  changeSpriteTo: {fileID: -3886580068927974941, guid: 22e03e73226413e4fabe96bfc2e9e95d, type: 3}
+  mySpriteRenderer: {fileID: 0}
 --- !u!1001 &1872935448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1989,6 +2005,10 @@ PrefabInstance:
       propertyPath: mySpecificTarget
       value: 
       objectReference: {fileID: 1818487687}
+    - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
+      propertyPath: objectToCollideWith
+      value: 
+      objectReference: {fileID: 1818487687}
     - target: {fileID: 6120935955885005661, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5999994
@@ -2313,7 +2333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5080793503911492883
 MonoBehaviour:
   m_ObjectHideFlags: 0

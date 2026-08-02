@@ -71,9 +71,11 @@ public class DraggableObject : MonoBehaviour
 
                 Debug.Log("Dropped draggable :(");
             }
+
+            mySpriteRenderer.sprite = spriteChangeAfterDrag;
+            Destroy(gameObject, 2.0f);
         }
 
-        Destroy(gameObject);
     }
 
     //Helper function since need to check if if the target is in the overlap when dropped
