@@ -3,47 +3,41 @@ using UnityEngine.InputSystem;
 
 public class EggYolk : MonoBehaviour
 {
-    [SerializeField] PlayerInput playerInput;
-
-    InputAction tap;
-    InputAction drag;
-
     private CircleCollider2D yolkCollider;
     private bool isBeingHeld = false;
     private bool cursorHere = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        tap = playerInput.actions.FindAction("Attack");
-        drag = playerInput.actions.FindAction("Drag");
-
         yolkCollider = GetComponent<CircleCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = drag.ReadValue<Vector2>();
+        Vector2 pos = Pointer.current.position.ReadValue();
         CheckCollider(pos);
 
-        if (tap.WasPressedThisFrame() && cursorHere)
+        if (Pointer.current.press.isPressed && cursorHere)
         {
             isBeingHeld = true;
         }
-        if (tap.WasReleasedThisFrame())
+        if (Pointer.current.press.wasReleasedThisFrame)
         {
             isBeingHeld = false;
         }
 
         if (isBeingHeld)
         {
-            this.gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(pos.x, drag.ReadValue<Vector2>().y, 1));
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 1f));
+            transform.position = worldPos;
         }
+
     }
 
     private void CheckCollider(Vector2 pos)
     {
-        if (yolkCollider.OverlapPoint(Camera.main.ScreenToWorldPoint(new Vector3(pos.x, drag.ReadValue<Vector2>().y, 1))))
+        if (yolkCollider.OverlapPoint(Camera.main.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 1f))))
         {
             cursorHere = true;
         } else
