@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private int audioSourceSimultaneousMax = 10;
     [SerializeField] private AudioClip correctSFX;
     [SerializeField] private AudioClip mistakeSFX;
+    [SerializeField] private AudioClip buttonClickSFX;
+    [SerializeField] private AudioClip closeMenuSFX;
 
     private AudioSource[] sfxSources;
 
@@ -89,6 +91,43 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = mistakeSFX;
+            availableSource.volume = 1.0f;
+            availableSource.pitch = 1.0f;
+            availableSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Maximum simultaneous sounds reached!");
+        }
+    }
+    public void PlayButtonClickSFX()
+    {
+        if (buttonClickSFX == null) return;
+
+        AudioSource availableSource = GetAvailableSource();
+
+        if (availableSource != null)
+        {
+            availableSource.clip = buttonClickSFX;
+            availableSource.volume = 1.0f;
+            availableSource.pitch = 1.0f;
+            availableSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Maximum simultaneous sounds reached!");
+        }
+    }
+
+    public void PlayCloseMenuSFX()
+    {
+        if (closeMenuSFX == null) return;
+
+        AudioSource availableSource = GetAvailableSource();
+
+        if (availableSource != null)
+        {
+            availableSource.clip = closeMenuSFX;
             availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.Play();

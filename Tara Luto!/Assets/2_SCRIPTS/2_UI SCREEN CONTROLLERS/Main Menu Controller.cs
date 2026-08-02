@@ -46,24 +46,28 @@ public class MainMenuController : MonoBehaviour
     private void StartGame()
     {
         Debug.Log("Started Game");
+        AudioManager.Instance.PlayButtonClickSFX();
         SceneManager.LoadScene(sceneToStart);
     }
 
     private void ViewSettings()
     {
         Debug.Log("Viewing Settings");
+        AudioManager.Instance.PlayButtonClickSFX();
         settingsObject.SetActive(true);
     }
 
     private void ViewCredits()
     {
         Debug.Log("Viewing Credits");
+        AudioManager.Instance.PlayButtonClickSFX();
         creditsObject.SetActive(true);
     }
 
     private void ExitGame()
     {
         Debug.Log("Viewing Exit Game Prompt");
+        AudioManager.Instance.PlayButtonClickSFX();
         exitGameObject.SetActive(true);
     }
 

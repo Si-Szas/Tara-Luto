@@ -29,6 +29,7 @@ public class CreditsController : MonoBehaviour
     private void CloseCredits()
     {
         Debug.Log("Closed Credits");
+        AudioManager.Instance.PlayCloseMenuSFX();
         creditsParent.SetActive(false);
     }
 
