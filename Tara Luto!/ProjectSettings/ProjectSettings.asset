@@ -167,6 +167,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
+    Android: com.SoroS.TaraLuto
     Standalone: com.DefaultCompany.2D-URP
   buildNumber:
     Standalone: 0
@@ -878,7 +879,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: ead4148c-a109-4b48-ad90-b4340484083b
   framebufferDepthMemorylessMode: 0
