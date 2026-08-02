@@ -62,4 +62,17 @@ public class PrepStepManager : MonoBehaviour
 
         timerHand.transform.localRotation = Quaternion.Euler(0f, 0f, currentZRotation);
     }
+
+    public void DecreaseTimerByPour()
+    {
+        timer += 6.0f * Time.deltaTime;
+        timer = Mathf.Clamp(timer, 0f, timerMax);
+
+        timerFill.fillAmount -= (6.0f * Time.deltaTime / timerMax);
+
+        float timePercent = timer / timerMax;
+        float currentZRotation = timePercent * 360f;
+
+        timerHand.transform.localRotation = Quaternion.Euler(0f, 0f, currentZRotation);
+    }
 }
