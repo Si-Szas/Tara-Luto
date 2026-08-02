@@ -30,13 +30,15 @@ public class PrepStepManager : MonoBehaviour
 
         if (timer > timerMax)
         {
+            proceedScreen.SetActive(true);
+            proceedScreen.GetComponent<PrepRating>().LightStars(barFill);
+
             timer = 0f;
             timerFill.fillAmount = 1f;
             barFill.fillAmount = 0f;
             timerHand.transform.rotation.Set(0f, 0f, 0f, 1f);
             isCounting = false;
 
-            proceedScreen.SetActive(true);
             this.gameObject.SetActive(false);
         }
     }
