@@ -11,10 +11,14 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        beginTapsilogButton.onClick.AddListener(LoadTapsilogLevel);
-        beginLumpiaButton.onClick.AddListener(LoadLumpiaLevel);
-        beginAdoboButton.onClick.AddListener(LoadAdoboLevel);
-        beginLecheFlanButton.onClick.AddListener(LoadLecheFlanLevel);
+        if(beginTapsilogButton != null)
+            beginTapsilogButton.onClick.AddListener(LoadTapsilogLevel);
+        if (beginLumpiaButton != null)
+            beginLumpiaButton.onClick.AddListener(LoadLumpiaLevel);
+        if (beginAdoboButton != null)
+            beginAdoboButton.onClick.AddListener(LoadAdoboLevel);
+        if (beginLecheFlanButton != null)
+            beginLecheFlanButton.onClick.AddListener(LoadLecheFlanLevel);
     }
     private void LoadTapsilogLevel()
     {

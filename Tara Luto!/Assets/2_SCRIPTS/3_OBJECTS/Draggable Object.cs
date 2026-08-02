@@ -71,17 +71,19 @@ public class DraggableObject : MonoBehaviour
                 EventList.TriggerEvent("DraggableObjectCollided");
                 //Add to bar fill value
                 barFill.fillAmount += 0.167f;
-
+                AudioManager.Instance.PlayCorrectSFX();
                 Debug.Log("Hit object to collide with!");
             }
             else
             {
                 //Place NEGATIVE effect broadcaster HERE. For example, time gets added for egg wasted
                 prepStepManager.DecreaseTimer();
+                AudioManager.Instance.PlayMistakeSFX();
                 Debug.Log("Dropped draggable :(");
             }
 
             mySpriteRenderer.sprite = spriteChangeAfterDrag;
+            AudioManager.Instance.PlaySFX(GetComponent<AudioSource>().clip);
             Destroy(gameObject, 1.0f);
         }
 
