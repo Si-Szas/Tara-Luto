@@ -31,11 +31,22 @@ public class PrepRating : MonoBehaviour
 
         Debug.Log("Star val: " + starCount);
 
+        if (stars == null || stars.Count == 0)
+        {
+            stars.Clear();
+            stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
+        }
+
         for (int i = 0; i < starCount; i++)
         {
             stars[i].sprite = litStar;
         }
 
         ratingManager.AddToOverallRating(starCount);
+    }
+
+    private void PopulateList()
+    {
+        stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
     }
 }
