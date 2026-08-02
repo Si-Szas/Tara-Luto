@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,12 +9,14 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Configurations")]
     //Simultaneous sfx allowed
     [SerializeField] private int audioSourceSimultaneousMax = 10;
+    [SerializeField] private AudioSource sceneBGMSource;
     [SerializeField] private AudioClip correctSFX;
     [SerializeField] private AudioClip mistakeSFX;
     [SerializeField] private AudioClip buttonClickSFX;
     [SerializeField] private AudioClip closeMenuSFX;
 
     private AudioSource[] sfxSources;
+    private Coroutine fadeCoroutine;
 
 
     //Singleton pattern so that any object can just call the manager
@@ -23,7 +26,7 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            InitializeAudioSimultaneousMax();
+            InitializeAudio();
         }
         else
         {
@@ -31,8 +34,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void InitializeAudioSimultaneousMax()
+    private void InitializeAudio()
     {
+        //BGM SET UP
+        sceneBGMSource = gameObject.AddComponent<AudioSource>();
+        sceneBGMSource.playOnAwake = false;
+        sceneBGMSource.loop = true; 
+
+        //SFX SET UP
         sfxSources = new AudioSource[audioSourceSimultaneousMax];
 
         for (int i = 0; i < audioSourceSimultaneousMax; i++)
@@ -42,6 +51,66 @@ public class AudioManager : MonoBehaviour
             source.loop = false;
             sfxSources[i] = source;
         }
+    }
+
+    public void PlayBGM(AudioClip musicClip, float volume = 0.5f)
+    {
+        if (musicClip == null || sceneBGMSource.clip == musicClip) return;
+
+        sceneBGMSource.clip = musicClip;
+        sceneBGMSource.volume = volume;
+        sceneBGMSource.Play();
+    }
+
+    public void ChangeBGMWithFade(AudioClip newMusicClip, float fadeDuration = 1.0f, float targetVolume = 0.5f)
+    {
+        if (newMusicClip == null || sceneBGMSource.clip == newMusicClip) return;
+
+        if (fadeCoroutine != null) StopCoroutine(fadeCoroutine);
+        fadeCoroutine = StartCoroutine(FadeBGMCoroutine(newMusicClip, fadeDuration, targetVolume));
+    }
+
+    private IEnumerator FadeBGMCoroutine(AudioClip newClip, float duration, float targetVolume)
+    {
+        float startVolume = sceneBGMSource.volume;
+
+        // Fade Out current music
+        if (sceneBGMSource.isPlaying)
+        {
+            for (float t = 0; t < duration; t += Time.deltaTime)
+            {
+                sceneBGMSource.volume = Mathf.Lerp(startVolume, 0f, t / duration);
+                yield return null;
+            }
+        }
+
+        // Swap out the track
+        sceneBGMSource.clip = newClip;
+        sceneBGMSource.Play();
+
+        // Fade In new music
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            sceneBGMSource.volume = Mathf.Lerp(0f, targetVolume, t / duration);
+            yield return null;
+        }
+
+        sceneBGMSource.volume = targetVolume;
+    }
+
+    public void StopBGM()
+    {
+        sceneBGMSource.Stop();
+    }
+
+    public void PauseBGM()
+    {
+        sceneBGMSource.Pause();
+    }
+
+    public void UnpauseBGM()
+    {
+        sceneBGMSource.UnPause();
     }
 
     public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f)

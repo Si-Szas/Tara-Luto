@@ -2375,7 +2375,7 @@ GameObject:
   - component: {fileID: 1879001832}
   - component: {fileID: 1879001833}
   m_Layer: 0
-  m_Name: Level Manager
+  m_Name: Recipe Selector Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2412,6 +2412,7 @@ MonoBehaviour:
   beginLumpiaButton: {fileID: 1358697743}
   beginAdoboButton: {fileID: 469062566}
   beginLecheFlanButton: {fileID: 2071905196}
+  sceneBGM: {fileID: 8300000, guid: 18551c29c36e17d4fb81442989026c08, type: 3}
 --- !u!1 &2040739064
 GameObject:
   m_ObjectHideFlags: 0

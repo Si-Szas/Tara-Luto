@@ -2,12 +2,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelManager : MonoBehaviour
+public class RecipeSelectorManager : MonoBehaviour
 {
     [SerializeField] private Button beginTapsilogButton;
     [SerializeField] private Button beginLumpiaButton;
     [SerializeField] private Button beginAdoboButton;
     [SerializeField] private Button beginLecheFlanButton;
+    [SerializeField] private AudioClip sceneBGM;
 
     private void Awake()
     {
@@ -19,6 +20,12 @@ public class LevelManager : MonoBehaviour
             beginAdoboButton.onClick.AddListener(LoadAdoboLevel);
         if (beginLecheFlanButton != null)
             beginLecheFlanButton.onClick.AddListener(LoadLecheFlanLevel);
+    }
+
+    private void Start()
+    {
+        if (sceneBGM != null)
+            AudioManager.Instance.PlayBGM(sceneBGM, 0.15f);
     }
     private void LoadTapsilogLevel()
     {

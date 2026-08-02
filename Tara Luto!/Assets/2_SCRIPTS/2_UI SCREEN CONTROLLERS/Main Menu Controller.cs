@@ -12,6 +12,9 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject exitGameObject;
     [SerializeField] private string sceneToStart;
 
+    [Header("BGM")]
+    [SerializeField] private AudioClip mainMenuBGM;
+
     private Button startGameButton;
     private Button settingsButton;
     private Button creditsButton;
@@ -41,6 +44,8 @@ public class MainMenuController : MonoBehaviour
         settingsButton.clicked += ViewSettings;
         creditsButton.clicked += ViewCredits;
         exitGameButton.clicked += ExitGame;
+
+        AudioManager.Instance.PlayBGM(mainMenuBGM, 0.25f);
     }
 
     private void StartGame()
