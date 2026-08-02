@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Draggable
   - Collide With
+  - eggYolk
   layers:
   - Default
   - TransparentFX

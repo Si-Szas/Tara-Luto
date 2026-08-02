@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab2e0480030d52442ac70c041bedc120
+guid: fb6d4fb163259ec46ad2f2510582df72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8380204734794197966
-    second: LecheFlan_EggBowl3_0
+      213: 6632088693030881995
+    second: LecheFlan_EggWhitesNoYolk_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LecheFlan_EggBowl3_0
+      name: LecheFlan_EggWhitesNoYolk_0
       rect:
         serializedVersion: 2
         x: 7
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecb647a5ec77c4470800000000000000
-      internalID: 8380204734794197966
+      spriteID: bca8dfa2789e90c50800000000000000
+      internalID: 6632088693030881995
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LecheFlan_EggBowl3_0: 8380204734794197966
+      LecheFlan_EggWhitesNoYolk_0: 6632088693030881995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
