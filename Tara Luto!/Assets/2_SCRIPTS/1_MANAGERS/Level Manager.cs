@@ -38,4 +38,9 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("6_LECHE FLAN");
     }
 
+    public void LoadMainGameScreen()
+    {
+        SceneManager.LoadScene("2_GAME");
+    }
+
 }
