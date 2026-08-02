@@ -1285,12 +1285,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1818487687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d494f9f8744c1a469ea1cf4ae156ed0, type: 3}
+  m_Script: {fileID: 11500000, guid: b3e3d98df1d02d04cb407d575a03a71f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollideWith
-  objectToCollideWith: {fileID: 917602172}
-  changeSpriteTo: {fileID: -3886580068927974941, guid: 22e03e73226413e4fabe96bfc2e9e95d, type: 3}
-  mySpriteRenderer: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::CollidedWith
+  gameSprites:
+  - {fileID: 6180489515303070443, guid: d3ee95016bf3b2943b71ea1521722cfa, type: 3}
+  - {fileID: -1984971042733381572, guid: b38154a4bee4c3a499904b0b998f6272, type: 3}
+  - {fileID: -8953007266945841391, guid: d3ee95016bf3b2943b71ea1521722cfa, type: 3}
+  increment: 2
 --- !u!1001 &1872935448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1956,6 +1958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288356018231787215}
   - component: {fileID: 4238039719026687765}
+  - component: {fileID: 4238039719026687766}
   m_Layer: 0
   m_Name: Prep Step - Crack Egg
   m_TagString: Untagged
@@ -2229,6 +2232,34 @@ MonoBehaviour:
   timerFill: {fileID: 6207695847288915060}
   timerHand: {fileID: 1860179494083777345}
   barFill: {fileID: 6300522404611328350}
+--- !u!114 &4238039719026687766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2737181085387405533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4ad33da81c4ec044a21411cfc520246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventListener
+  gameEvent: {fileID: 11400000, guid: e6e497854ccb6b94ea1ef125b5ebe30c, type: 2}
+  funcToCall:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1818487692}
+        m_TargetAssemblyTypeName: CollidedWith, Assembly-CSharp
+        m_MethodName: AddCounter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4435298994472909863
 MonoBehaviour:
   m_ObjectHideFlags: 0

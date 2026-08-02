@@ -62,7 +62,7 @@ public class DraggableObject : MonoBehaviour
             if (myCollider.Overlap(contactFilter, new Collider2D[1]) > 0 && IsTargetInOverlap(dragObjectToCollider))
             {
                 //Place progress bar event broadcaster here.
-
+                EventList.TriggerEvent("DraggableObjectCollided");
                 Debug.Log("Hit object to collide with!");
             }
             else
