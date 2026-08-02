@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Draggable
+  - Collide With
   layers:
   - Default
   - TransparentFX
@@ -46,6 +48,9 @@ TagManager:
     locked: 0
   - name: Game BG
     uniqueID: 15852713
+    locked: 0
+  - name: Objects
+    uniqueID: 3685327173
     locked: 0
   - name: Effects
     uniqueID: 439962329
