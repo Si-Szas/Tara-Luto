@@ -40,11 +40,13 @@ public class LevelManager : MonoBehaviour
     private void LoadLecheFlanLevel()
     {
         SceneManager.LoadScene("6_LECHE FLAN");
+        AudioManager.Instance.PlayButtonClickSFX();
     }
 
     public void LoadMainGameScreen()
     {
         SceneManager.LoadScene("2_GAME");
+        AudioManager.Instance.PlayButtonClickSFX();
     }
 
 }
