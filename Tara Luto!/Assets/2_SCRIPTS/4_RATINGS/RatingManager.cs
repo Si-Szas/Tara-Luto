@@ -15,7 +15,7 @@ public class RatingManager : MonoBehaviour
     // Private vars
     [SerializeField]  int overallRating = 0;
 
-    private bool totalled = false;
+    [SerializeField] private bool totalled = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,12 +35,19 @@ public class RatingManager : MonoBehaviour
     {
         int totalStars = overallRating / total;
 
+        if (stars == null || stars.Count == 0)
+        {
+            stars.Clear();
+            PopulateList();
+        }
+
         for (int i = 0; i < totalStars; i++)
         {
             stars[i].sprite = litStar;  
         }
 
         totalled = true;
+        StarManager.lecheFlanStars = totalStars;
     }
 
     public void AddToOverallRating(int count)
@@ -53,5 +60,10 @@ public class RatingManager : MonoBehaviour
         overallRating = 0;
         totalled = false;
         this.gameObject.SetActive(false);   
+    }
+
+    private void PopulateList()
+    {
+        stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
     }
 }

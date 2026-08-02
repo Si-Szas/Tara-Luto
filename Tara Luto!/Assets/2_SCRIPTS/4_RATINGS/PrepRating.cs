@@ -34,7 +34,7 @@ public class PrepRating : MonoBehaviour
         if (stars == null || stars.Count == 0)
         {
             stars.Clear();
-            stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
+            PopulateList(); 
         }
 
         for (int i = 0; i < starCount; i++)
