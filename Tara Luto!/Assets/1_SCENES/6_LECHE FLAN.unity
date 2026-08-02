@@ -1997,6 +1997,10 @@ PrefabInstance:
       value: Egg
       objectReference: {fileID: 0}
     - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
+      propertyPath: barFill
+      value: 
+      objectReference: {fileID: 6300522404611328350}
+    - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
       propertyPath: objectToDragTo
       value: 
       objectReference: {fileID: 1818487687}

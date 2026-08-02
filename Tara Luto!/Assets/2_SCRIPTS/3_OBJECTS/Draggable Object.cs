@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Collider2D))]
 public class DraggableObject : MonoBehaviour
@@ -11,6 +12,9 @@ public class DraggableObject : MonoBehaviour
     [Header("Sprite Options")]
     [SerializeField] private Sprite spriteChangeAfterDrag;
     [SerializeField] private SpriteRenderer mySpriteRenderer;
+
+    [Header("Completion")]
+    [SerializeField] Image barFill;
 
     private Camera mainCamera;
     private bool isDragging = true;
@@ -61,8 +65,10 @@ public class DraggableObject : MonoBehaviour
             //Check if the collider overlaps with the object we want it to be colliding with
             if (myCollider.Overlap(contactFilter, new Collider2D[1]) > 0 && IsTargetInOverlap(dragObjectToCollider))
             {
-                //Place progress bar event broadcaster here.
                 EventList.TriggerEvent("DraggableObjectCollided");
+                //Add to bar fill value
+                barFill.fillAmount += 0.167f;
+
                 Debug.Log("Hit object to collide with!");
             }
             else

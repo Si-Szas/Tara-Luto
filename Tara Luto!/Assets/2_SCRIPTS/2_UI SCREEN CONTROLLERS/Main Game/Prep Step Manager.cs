@@ -24,11 +24,11 @@ public class PrepStepManager : MonoBehaviour
         {
             timer += Time.deltaTime;
             timerFill.fillAmount -= 0.033f * Time.deltaTime;
-            barFill.fillAmount += 0.033f * Time.deltaTime;
+            //barFill.fillAmount += 0.033f * Time.deltaTime;
             timerHand.transform.rotation *= Quaternion.Euler(0f, 0f, 12f * Time.deltaTime);
         }
 
-        if (timer > timerMax)
+        if (timer > timerMax || barFill.fillAmount >= 1)
         {
             proceedScreen.SetActive(true);
             proceedScreen.GetComponent<PrepRating>().LightStars(barFill);
