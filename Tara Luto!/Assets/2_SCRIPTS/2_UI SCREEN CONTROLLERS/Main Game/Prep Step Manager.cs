@@ -41,10 +41,25 @@ public class PrepStepManager : MonoBehaviour
 
             this.gameObject.SetActive(false);
         }
+
+        Debug.Log(timer);
+        //Debug.Log(timerFill.fillAmount);
     }
 
     public void StartCounting()
     {
         isCounting = true;
+    }
+
+    public void DecreaseTimer()
+    {
+        Debug.Log("Time decreased!");
+        timer += 5.0f;
+        timerFill.fillAmount -= (5.0f / timerMax);
+
+        float timePercent = timer / timerMax;
+        float currentZRotation = timePercent * 360f;
+
+        timerHand.transform.localRotation = Quaternion.Euler(0f, 0f, currentZRotation);
     }
 }

@@ -6,6 +6,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Collider2D))]
 public class DraggableObject : MonoBehaviour
 {
+    [Header("Manager")]
+    [SerializeField] private PrepStepManager prepStepManager;
+
     [Header("Object to Collide With")]
     [SerializeField] private GameObject objectToCollideWith;
 
@@ -13,7 +16,7 @@ public class DraggableObject : MonoBehaviour
     [SerializeField] private Sprite spriteChangeAfterDrag;
     [SerializeField] private SpriteRenderer mySpriteRenderer;
 
-    [Header("Completion")]
+    [Header("Progress Tracker")]
     [SerializeField] Image barFill;
 
     private Camera mainCamera;
@@ -74,12 +77,12 @@ public class DraggableObject : MonoBehaviour
             else
             {
                 //Place NEGATIVE effect broadcaster HERE. For example, time gets added for egg wasted
-
+                prepStepManager.DecreaseTimer();
                 Debug.Log("Dropped draggable :(");
             }
 
             mySpriteRenderer.sprite = spriteChangeAfterDrag;
-            Destroy(gameObject, 2.0f);
+            Destroy(gameObject, 1.0f);
         }
 
     }
