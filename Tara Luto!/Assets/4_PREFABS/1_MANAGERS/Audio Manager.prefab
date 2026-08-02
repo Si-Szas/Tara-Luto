@@ -44,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e061093166d59488d02b0e0b0450f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  audioSourceSimultaneousMax: 10
+  correctSFX: {fileID: 8300000, guid: 4263936449ecb05429b22503405a86d8, type: 3}
+  mistakeSFX: {fileID: 8300000, guid: b887c35a0c5e4034ea8a5f696752cea1, type: 3}
+  buttonClickSFX: {fileID: 8300000, guid: 72150b037cd5edb4795207bfcda4a715, type: 3}
+  closeMenuSFX: {fileID: 8300000, guid: 2d67115f69358ed4b9b3fc82938d2bc2, type: 3}
