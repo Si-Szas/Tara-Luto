@@ -42,7 +42,7 @@ public class PrepStepManager : MonoBehaviour
             this.gameObject.SetActive(false);
         }
 
-        Debug.Log(timer);
+        //Debug.Log(timer);
         //Debug.Log(timerFill.fillAmount);
     }
 
@@ -53,7 +53,7 @@ public class PrepStepManager : MonoBehaviour
 
     public void DecreaseTimer()
     {
-        Debug.Log("Time decreased!");
+        //Debug.Log("Time decreased!");
         timer += 5.0f;
         timerFill.fillAmount -= (5.0f / timerMax);
 
