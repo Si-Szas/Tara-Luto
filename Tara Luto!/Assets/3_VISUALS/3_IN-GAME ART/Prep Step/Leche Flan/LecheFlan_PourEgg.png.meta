@@ -1,34 +1,19 @@
 fileFormatVersion: 2
-guid: 4c7c7d679f03ee943abc27472f2e801e
+guid: e5c29888bc066d54494c212ee2fb7578
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7645216952644314390
-    second: LecheFlan_CookingPour_0
+      213: 1170640621310979684
+    second: LecheFlan_PourEgg_0
   - first:
-      213: 8661431718262876247
-    second: LecheFlan_CookingPour_1
+      213: -4159563074049532205
+    second: LecheFlan_PourEgg_1
   - first:
-      213: -4593931795848538070
-    second: LecheFlan_CookingPour_2
+      213: -6557831259833348720
+    second: LecheFlan_PourEgg_2
   - first:
-      213: 1054572536992354007
-    second: LecheFlan_CookingPour_3
-  - first:
-      213: 763032611464764085
-    second: LecheFlan_CookingPour_4
-  - first:
-      213: 301350546170376269
-    second: LecheFlan_CookingPour_5
-  - first:
-      213: -2362581669685574437
-    second: LecheFlan_CookingPour_6
-  - first:
-      213: 485122184064480233
-    second: LecheFlan_CookingPour_7
-  - first:
-      213: 8982102675406062375
-    second: LecheFlan_CookingPour_8
+      213: 2455770953088932825
+    second: LecheFlan_PourEgg_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -163,111 +148,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LecheFlan_CookingPour_0
+      name: LecheFlan_PourEgg_0
       rect:
         serializedVersion: 2
-        x: 250
-        y: 821
-        width: 1091
-        height: 180
+        x: 132
+        y: 492
+        width: 242
+        height: 482
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aea57da00bbb6e590800000000000000
-      internalID: -7645216952644314390
+      spriteID: 46e22e85173fe3010800000000000000
+      internalID: 1170640621310979684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LecheFlan_CookingPour_3
+      name: LecheFlan_PourEgg_1
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 600
-        width: 780
-        height: 341
+        x: 391
+        y: 286
+        width: 259
+        height: 688
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7decf41922892ae00800000000000000
-      internalID: 1054572536992354007
+      spriteID: 3de12762c634646c0800000000000000
+      internalID: -4159563074049532205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LecheFlan_CookingPour_5
+      name: LecheFlan_PourEgg_2
       rect:
         serializedVersion: 2
-        x: 248
-        y: 537
-        width: 1091
-        height: 180
+        x: 739
+        y: 135
+        width: 261
+        height: 839
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d40fa51a9bc9e2400800000000000000
-      internalID: 301350546170376269
+      spriteID: 09d4eacc637edf4a0800000000000000
+      internalID: -6557831259833348720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LecheFlan_CookingPour_7
+      name: LecheFlan_PourEgg_3
       rect:
         serializedVersion: 2
-        x: 275
-        y: 80
-        width: 780
-        height: 341
+        x: 1031
+        y: 230
+        width: 817
+        height: 798
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e333dd5e008bb600800000000000000
-      internalID: 485122184064480233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LecheFlan_CookingPour_8
-      rect:
-        serializedVersion: 2
-        x: 1534
-        y: 92
-        width: 780
-        height: 341
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7230aa74bc6d6ac70800000000000000
-      internalID: 8982102675406062375
+      spriteID: 9db969caba6a41220800000000000000
+      internalID: 2455770953088932825
       vertices: []
       indices: 
       edges: []
@@ -276,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f3cce2753fb56bd4fb70df10ad2e6116
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -286,15 +249,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LecheFlan_CookingPour_0: -7645216952644314390
-      LecheFlan_CookingPour_1: 8661431718262876247
-      LecheFlan_CookingPour_2: -4593931795848538070
-      LecheFlan_CookingPour_3: 1054572536992354007
-      LecheFlan_CookingPour_4: 763032611464764085
-      LecheFlan_CookingPour_5: 301350546170376269
-      LecheFlan_CookingPour_6: -2362581669685574437
-      LecheFlan_CookingPour_7: 485122184064480233
-      LecheFlan_CookingPour_8: 8982102675406062375
+      LecheFlan_PourEgg_0: 1170640621310979684
+      LecheFlan_PourEgg_1: -4159563074049532205
+      LecheFlan_PourEgg_2: -6557831259833348720
+      LecheFlan_PourEgg_3: 2455770953088932825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
