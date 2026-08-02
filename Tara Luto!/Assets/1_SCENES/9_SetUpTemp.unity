@@ -1716,6 +1716,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3957222400026202634, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
+      propertyPath: m_text
+      value: Separate the egg yolks from the egg whites!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292785029579111357, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
+      propertyPath: m_text
+      value: Prepare egg yolk mixture
+      objectReference: {fileID: 0}
     - target: {fileID: 8830985434786358867, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
       propertyPath: m_Name
       value: Instruction Screen - Mixture
