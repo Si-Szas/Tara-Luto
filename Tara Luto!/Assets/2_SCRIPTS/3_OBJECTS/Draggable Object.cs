@@ -69,14 +69,12 @@ public class DraggableObject : MonoBehaviour
             if (myCollider.Overlap(contactFilter, new Collider2D[1]) > 0 && IsTargetInOverlap(dragObjectToCollider))
             {
                 EventList.TriggerEvent("DraggableObjectCollided");
-                //Add to bar fill value
                 barFill.fillAmount += 0.167f;
                 AudioManager.Instance.PlayCorrectSFX();
                 Debug.Log("Hit object to collide with!");
             }
-            else
+            else //Egg was not placed in the bowl (released)
             {
-                //Place NEGATIVE effect broadcaster HERE. For example, time gets added for egg wasted
                 prepStepManager.DecreaseTimer();
                 AudioManager.Instance.PlayMistakeSFX();
                 Debug.Log("Dropped draggable :(");
