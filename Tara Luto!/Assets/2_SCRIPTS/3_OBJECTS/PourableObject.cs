@@ -27,6 +27,8 @@ public class PourableObject : MonoBehaviour
     private float currentRotation = 0f;
     private float lastFrameRotation = 0f;
 
+    private bool isPouring = false;
+
     void OnEnable()
     {
         if (Accelerometer.current != null)
@@ -37,6 +39,8 @@ public class PourableObject : MonoBehaviour
     {
         if (Accelerometer.current != null)
             InputSystem.DisableDevice(Accelerometer.current);
+
+        AudioManager.Instance.StopSFX(pourSFX);
     }
 
     void Update()
@@ -86,7 +90,13 @@ public class PourableObject : MonoBehaviour
                 {
                     barFill.fillAmount += fillRate * Time.deltaTime;
                     barFill.fillAmount = Mathf.Clamp01(barFill.fillAmount);
-                    AudioManager.Instance.PlaySFX(pourSFX, 0.5f);
+                }
+
+                if(!isPouring)
+                {
+                    isPouring = true;
+                    AudioManager.Instance.PlaySFX(pourSFX, 0.5f, 1.0f, true);
+                    AudioManager.Instance.PlayCorrectSFX();
                 }
             }
             else
@@ -95,8 +105,21 @@ public class PourableObject : MonoBehaviour
                 {
                     //If the player pours too fast
                     prepStepManager.DecreaseTimerByPour();
+                }
+
+                if (!isPouring)
+                {
+                    isPouring = true;
+                    AudioManager.Instance.PlaySFX(pourSFX, 0.5f, 1.0f, true);
                     AudioManager.Instance.PlayMistakeSFX();
                 }
+            } //if the object isnt pouring
+        } else
+        {
+            if (isPouring)
+            {
+                isPouring = false;
+                AudioManager.Instance.StopSFX(pourSFX);
             }
         }
     }

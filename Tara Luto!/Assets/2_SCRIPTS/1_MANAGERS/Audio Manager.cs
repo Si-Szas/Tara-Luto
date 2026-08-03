@@ -189,6 +189,22 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void StopSFX(AudioClip clipToStop)
+    {
+        if (clipToStop == null) return;
+
+        AudioSource[] sources = GetComponents<AudioSource>();
+
+        foreach (AudioSource source in sources)
+        {
+            if (source.isPlaying && source.clip == clipToStop)
+            {
+                source.Stop();
+                source.clip = null;
+            }
+        }
+    }
+
     //public void PlayCloseMenuSFX()
     //{
     //    if (closeMenuSFX == null) return;
