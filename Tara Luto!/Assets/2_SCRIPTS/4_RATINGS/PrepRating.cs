@@ -20,7 +20,6 @@ public class PrepRating : MonoBehaviour
     {
         stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
         feedbackText = textObject.GetComponent<TextMeshProUGUI>();
-        feedbackText.text = "Hmmm...let's...let's just move on...";
     }
 
     public void LightStars(UnityEngine.UI.Image endProgress)
