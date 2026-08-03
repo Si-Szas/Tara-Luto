@@ -48,6 +48,7 @@ public class RatingManager : MonoBehaviour
 
         totalled = true;
         StarManager.lecheFlanStars = totalStars;
+        StarManager.SaveStarCount();
     }
 
     public void AddToOverallRating(int count)

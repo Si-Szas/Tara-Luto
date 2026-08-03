@@ -15,6 +15,8 @@ public class PollStars : MonoBehaviour
     }
     private void OnEnable()
     {
+        StarManager.LoadStarCount();
+
         if (stars == null || stars.Count == 0)
         {
             stars.Clear();
