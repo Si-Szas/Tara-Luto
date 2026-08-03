@@ -25,7 +25,7 @@ public class LecheFlanMixtureStep : MonoBehaviour
         if (collision.gameObject.tag == "eggYolk")
         {
             yolksIn--;
-            AudioManager.Instance.PlayMistakeSFX();
+            //AudioManager.Instance.PlayMistakeSFX();
             progressBar.fillAmount -= 0.16f;
         }
     }

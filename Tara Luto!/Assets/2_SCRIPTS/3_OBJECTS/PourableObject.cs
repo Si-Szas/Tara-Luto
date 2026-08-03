@@ -6,6 +6,8 @@ public class PourableObject : MonoBehaviour
 {
     [Header("Manager")]
     [SerializeField] private PrepStepManager prepStepManager;
+    [SerializeField] private bool hasNextPhase = false;
+    [SerializeField] private GameObject nextPhaseGameObject;
 
     [Header("Tilt")]
     [SerializeField] private float maxTiltAngle = 60f;
@@ -64,6 +66,14 @@ public class PourableObject : MonoBehaviour
 
         //Fill up progress bar
         HandleProgressivePour(currentRotationSpeed);
+
+        if (hasNextPhase) { 
+            if(barFill.fillAmount >= 0.25)
+            {
+                nextPhaseGameObject.SetActive(true);
+                transform.parent.gameObject.SetActive(false);
+            }
+        }
     }
 
     private void HandleProgressivePour(float rotationSpeed)
@@ -83,7 +93,9 @@ public class PourableObject : MonoBehaviour
             {
                 if (prepStepManager != null)
                 {
+                    //If the player pours too fast
                     prepStepManager.DecreaseTimerByPour();
+                    AudioManager.Instance.PlayMistakeSFX();
                 }
             }
         }

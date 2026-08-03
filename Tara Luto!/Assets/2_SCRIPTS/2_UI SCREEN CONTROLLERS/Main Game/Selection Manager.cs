@@ -8,6 +8,6 @@ public class SelectionManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("1_MAIN MENU");
-        AudioManager.Instance.PlayCloseMenuSFX();
+        AudioManager.Instance.PlayButtonClickSFX();
     }
 }

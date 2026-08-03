@@ -8,11 +8,17 @@ public class DraggableObject : MonoBehaviour
 {
     [Header("Manager")]
     [SerializeField] private PrepStepManager prepStepManager;
+    [SerializeField] private bool destroyAfterCollide = false;
+    [SerializeField] private float lerpSpeed = 5.0f;
+    [SerializeField] private bool hasNextPhase = false;
+    [SerializeField] private GameObject nextPhaseGameObject;
+    [SerializeField] private float progressThreshold;
 
     [Header("Object to Collide With")]
     [SerializeField] private GameObject objectToCollideWith;
 
     [Header("Sprite Options")]
+    [SerializeField] private bool changeSpriteAfterDrag = false;
     [SerializeField] private Sprite spriteChangeAfterDrag;
     [SerializeField] private SpriteRenderer mySpriteRenderer;
 
@@ -20,29 +26,48 @@ public class DraggableObject : MonoBehaviour
     [SerializeField] Image barFill;
 
     private Camera mainCamera;
-    private bool isDragging = true;
+    private bool isDragging = false;
+    private Vector3 startPosition;
     private Collider2D myCollider;
+    private bool lerpBack = false;
+    private bool goToNextPhase = false;
 
     private void Awake()
     {
         mainCamera = Camera.main;
         myCollider = GetComponent<Collider2D>();
-    }
 
-    void Start()
-    {
-
+        //If we dont want object to be destroyed after it collides, then we let it lerp back
+        if (!destroyAfterCollide)
+        {
+            startPosition = transform.position;
+        }
     }
 
     void Update()
     {
         if (Pointer.current == null) return;
 
+        Vector2 screenPos = Pointer.current.position.ReadValue();
+        Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, Mathf.Abs(mainCamera.transform.position.z)));
+        worldPos.z = 0f;
+
+        if (Pointer.current.press.wasPressedThisFrame)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
+            if (hit.collider != null && hit.collider == myCollider)
+            {
+                isDragging = true;
+
+                if (!destroyAfterCollide) 
+                { 
+                    lerpBack = false; 
+                }
+            }
+        }
+
         if (isDragging && Pointer.current.press.isPressed)
         {
-            Vector2 screenPos = Pointer.current.position.ReadValue();
-            Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, Mathf.Abs(mainCamera.transform.position.z)));
-            worldPos.z = 0f;
             transform.position = worldPos;
         }
 
@@ -50,6 +75,23 @@ public class DraggableObject : MonoBehaviour
         {
             isDragging = false;
             CheckAndDestroyDraggable();
+        }
+
+        if (lerpBack && !isDragging && !destroyAfterCollide)
+        {
+            transform.position = Vector3.Lerp(transform.position, startPosition, Time.deltaTime * lerpSpeed);
+
+            if (Vector3.Distance(transform.position, startPosition) < 0.01f)
+            {
+                transform.position = startPosition;
+                lerpBack = false;
+            }
+        }
+
+        if(goToNextPhase)
+        {
+            nextPhaseGameObject.SetActive(true);
+            transform.parent.gameObject.SetActive(false);
         }
     }
 
@@ -69,20 +111,46 @@ public class DraggableObject : MonoBehaviour
             if (myCollider.Overlap(contactFilter, new Collider2D[1]) > 0 && IsTargetInOverlap(dragObjectToCollider))
             {
                 EventList.TriggerEvent("DraggableObjectCollided");
-                barFill.fillAmount += 0.167f;
+                 
                 AudioManager.Instance.PlayCorrectSFX();
                 Debug.Log("Hit object to collide with!");
+
+                if(!destroyAfterCollide)
+                {
+                    lerpBack = false;
+                    barFill.fillAmount += 0.25f;
+                } else {
+                    barFill.fillAmount += 0.167f;
+                }
+
+                if (hasNextPhase)
+                {
+                    goToNextPhase = true;
+                }
             }
             else //Egg was not placed in the bowl (released)
             {
                 prepStepManager.DecreaseTimer();
                 AudioManager.Instance.PlayMistakeSFX();
                 Debug.Log("Dropped draggable :(");
+
+                if (!destroyAfterCollide)
+                {
+                    lerpBack = true;
+                }
             }
 
-            mySpriteRenderer.sprite = spriteChangeAfterDrag;
             AudioManager.Instance.PlaySFX(GetComponent<AudioSource>().clip);
-            Destroy(gameObject, 1.0f);
+
+            if (destroyAfterCollide)
+            {
+                Destroy(gameObject, 1.0f);
+            }
+
+            if(changeSpriteAfterDrag)
+            {
+                mySpriteRenderer.sprite = spriteChangeAfterDrag;
+            }
         }
 
     }

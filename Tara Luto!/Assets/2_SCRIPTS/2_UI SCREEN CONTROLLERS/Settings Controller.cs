@@ -29,7 +29,7 @@ public class SettingsController : MonoBehaviour
     private void CloseSettings()
     {
         Debug.Log("Closed Settings");
-        AudioManager.Instance.PlayCloseMenuSFX();
+        AudioManager.Instance.PlayButtonClickSFX();
         settingsParent.SetActive(false);
     }
 

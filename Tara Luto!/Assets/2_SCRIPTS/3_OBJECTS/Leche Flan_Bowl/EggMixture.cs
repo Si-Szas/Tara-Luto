@@ -45,7 +45,7 @@ public class EggMixture : MonoBehaviour
 
             if (progressBar.fillAmount < 0.5)
             {
-                progressBar.fillAmount += 0.0002f;
+                progressBar.fillAmount += 0.05f;
                 if (progressBar.fillAmount >= 0.16f && progressBar.fillAmount < 0.32)
                 {
                     Debug.Log("sprite 2");

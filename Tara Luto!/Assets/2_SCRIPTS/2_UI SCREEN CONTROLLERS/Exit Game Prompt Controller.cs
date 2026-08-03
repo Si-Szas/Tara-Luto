@@ -39,7 +39,7 @@ public class ExitGamePromptController : MonoBehaviour
     private void ExitGame()
     {
         Debug.Log("Exiting Game");
-        AudioManager.Instance.PlayCloseMenuSFX();
+        AudioManager.Instance.PlayButtonClickSFX();
         Application.Quit();
     }
 

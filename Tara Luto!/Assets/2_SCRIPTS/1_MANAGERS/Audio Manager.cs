@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip correctSFX;
     [SerializeField] private AudioClip mistakeSFX;
     [SerializeField] private AudioClip buttonClickSFX;
-    [SerializeField] private AudioClip closeMenuSFX;
+    //[SerializeField] private AudioClip closeMenuSFX;
 
     private AudioSource[] sfxSources;
     private Coroutine fadeCoroutine;
@@ -113,7 +113,7 @@ public class AudioManager : MonoBehaviour
         sceneBGMSource.UnPause();
     }
 
-    public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f)
+    public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f, bool loop = false)
     {
         if (clip == null) return;
 
@@ -124,6 +124,7 @@ public class AudioManager : MonoBehaviour
             availableSource.clip = clip;
             availableSource.volume = volume;
             availableSource.pitch = pitch;
+            availableSource.loop = loop;
             availableSource.Play();
         }
         else
@@ -188,24 +189,24 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayCloseMenuSFX()
-    {
-        if (closeMenuSFX == null) return;
+    //public void PlayCloseMenuSFX()
+    //{
+    //    if (closeMenuSFX == null) return;
 
-        AudioSource availableSource = GetAvailableSource();
+    //    AudioSource availableSource = GetAvailableSource();
 
-        if (availableSource != null)
-        {
-            availableSource.clip = closeMenuSFX;
-            availableSource.volume = 1.0f;
-            availableSource.pitch = 1.0f;
-            availableSource.Play();
-        }
-        else
-        {
-            Debug.LogWarning("Maximum simultaneous sounds reached!");
-        }
-    }
+    //    if (availableSource != null)
+    //    {
+    //        availableSource.clip = closeMenuSFX;
+    //        availableSource.volume = 1.0f;
+    //        availableSource.pitch = 1.0f;
+    //        availableSource.Play();
+    //    }
+    //    else
+    //    {
+    //        Debug.LogWarning("Maximum simultaneous sounds reached!");
+    //    }
+    //}
 
     private AudioSource GetAvailableSource()
     {
