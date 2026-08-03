@@ -5808,7 +5808,7 @@ GameObject:
   - component: {fileID: 1498820786}
   - component: {fileID: 1498820785}
   m_Layer: 0
-  m_Name: Egg Mixture
+  m_Name: Flan Pan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5900,7 +5900,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3453879840564805266, guid: 3325a9b1b66ab2e428453e727f29e9e6, type: 3}
+  m_Sprite: {fileID: -7751246629476232500, guid: 853ce4ffa0ac7f8478b07189f703dcf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5922,9 +5922,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a5ccb11511b944b914ebe7488e1625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EggMixture
-  sprite1: {fileID: 8982102675406062375, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
-  sprite2: {fileID: 8982102675406062375, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
-  sprite3: {fileID: 8982102675406062375, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
+  sprite1: {fileID: -7751246629476232500, guid: 853ce4ffa0ac7f8478b07189f703dcf6, type: 3}
+  sprite2: {fileID: -1188427084614338660, guid: 853ce4ffa0ac7f8478b07189f703dcf6, type: 3}
+  sprite3: {fileID: -1188427084614338660, guid: 853ce4ffa0ac7f8478b07189f703dcf6, type: 3}
   progressBar: {fileID: 6300522403598021765}
   nextPhase: {fileID: 1545702531}
   mixThreshold: 0.2
