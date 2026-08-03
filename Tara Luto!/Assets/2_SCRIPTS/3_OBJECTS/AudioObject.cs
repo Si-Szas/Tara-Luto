@@ -7,21 +7,27 @@ public class AudioObject : MonoBehaviour
     [SerializeField] float pitch = 1.0f;
     [SerializeField] bool isLoopable = false;
     [SerializeField] bool playOnStart = false;
+    
+    private AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = AudioManager.Instance;
+    }
 
     private void Start()
     {
         if(playOnStart) {
-            AudioManager.Instance.PlaySFX(sfx, volume, pitch, isLoopable);
+            audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
         }
     }
 
     private void OnEnable()
     {
-        AudioManager.Instance.PlaySFX(sfx, volume, pitch, isLoopable);
+        audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
     }
 
     private void OnDisable()
     {
-        AudioManager.Instance.StopSFX(sfx);
+        audioManager.StopSFX(sfx);
     }
 }
