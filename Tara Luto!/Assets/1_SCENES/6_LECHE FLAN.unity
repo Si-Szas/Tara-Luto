@@ -193,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5a20c6f00335f4492f479593241c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EggYolk
+  yolkPickupSFX: {fileID: 8300000, guid: 343061c56933eda49888c589b815f28a, type: 3}
+  yolkDropSFX: {fileID: 8300000, guid: e5b6d7c1dd27fd7448aa82df1ae7d01b, type: 3}
 --- !u!58 &56029197
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2045,6 +2047,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5a20c6f00335f4492f479593241c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EggYolk
+  yolkPickupSFX: {fileID: 8300000, guid: 343061c56933eda49888c589b815f28a, type: 3}
+  yolkDropSFX: {fileID: 8300000, guid: e5b6d7c1dd27fd7448aa82df1ae7d01b, type: 3}
 --- !u!58 &557899632
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2364,6 +2368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5a20c6f00335f4492f479593241c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EggYolk
+  yolkPickupSFX: {fileID: 8300000, guid: 343061c56933eda49888c589b815f28a, type: 3}
+  yolkDropSFX: {fileID: 8300000, guid: e5b6d7c1dd27fd7448aa82df1ae7d01b, type: 3}
 --- !u!58 &627612812
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4016,6 +4022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5a20c6f00335f4492f479593241c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EggYolk
+  yolkPickupSFX: {fileID: 8300000, guid: 343061c56933eda49888c589b815f28a, type: 3}
+  yolkDropSFX: {fileID: 8300000, guid: e5b6d7c1dd27fd7448aa82df1ae7d01b, type: 3}
 --- !u!58 &1076729665
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6235,6 +6243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5a20c6f00335f4492f479593241c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EggYolk
+  yolkPickupSFX: {fileID: 8300000, guid: 343061c56933eda49888c589b815f28a, type: 3}
+  yolkDropSFX: {fileID: 8300000, guid: e5b6d7c1dd27fd7448aa82df1ae7d01b, type: 3}
 --- !u!58 &1811356288
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7515,6 +7525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5a20c6f00335f4492f479593241c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EggYolk
+  yolkPickupSFX: {fileID: 8300000, guid: 343061c56933eda49888c589b815f28a, type: 3}
+  yolkDropSFX: {fileID: 8300000, guid: e5b6d7c1dd27fd7448aa82df1ae7d01b, type: 3}
 --- !u!58 &2004586850
 CircleCollider2D:
   m_ObjectHideFlags: 0

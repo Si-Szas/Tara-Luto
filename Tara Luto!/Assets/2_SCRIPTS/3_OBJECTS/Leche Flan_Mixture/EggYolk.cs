@@ -3,9 +3,13 @@ using UnityEngine.InputSystem;
 
 public class EggYolk : MonoBehaviour
 {
+    [SerializeField] private AudioClip yolkPickupSFX;
+    [SerializeField] private AudioClip yolkDropSFX;
+
     private CircleCollider2D yolkCollider;
     private bool isBeingHeld = false;
     private bool cursorHere = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,16 +19,23 @@ public class EggYolk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Pointer.current == null) return;
+
         Vector2 pos = Pointer.current.position.ReadValue();
         CheckCollider(pos);
 
-        if (Pointer.current.press.isPressed && cursorHere)
+        //only when clicked is sfx playing
+        if (Pointer.current.press.wasPressedThisFrame && cursorHere)
         {
             isBeingHeld = true;
+            AudioManager.Instance.PlaySFX(yolkPickupSFX, 0.5f);
         }
-        if (Pointer.current.press.wasReleasedThisFrame)
+
+        //drop yolk
+        if (Pointer.current.press.wasReleasedThisFrame && isBeingHeld)
         {
             isBeingHeld = false;
+            AudioManager.Instance.PlaySFX(yolkDropSFX, 0.5f);
         }
 
         if (isBeingHeld)
@@ -32,7 +43,6 @@ public class EggYolk : MonoBehaviour
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 1f));
             transform.position = worldPos;
         }
-
     }
 
     private void CheckCollider(Vector2 pos)
@@ -40,10 +50,10 @@ public class EggYolk : MonoBehaviour
         if (yolkCollider.OverlapPoint(Camera.main.ScreenToWorldPoint(new Vector3(pos.x, pos.y, 1f))))
         {
             cursorHere = true;
-        } else
+        }
+        else
         {
             cursorHere = false;
         }
     }
-
 }
