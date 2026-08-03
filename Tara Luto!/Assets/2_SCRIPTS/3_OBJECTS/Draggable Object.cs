@@ -144,7 +144,14 @@ public class DraggableObject : MonoBehaviour
 
             if (destroyAfterCollide)
             {
-                Destroy(gameObject, 1.0f);
+                //Dont destroy the egg immediately if bar fill isnt finished
+                if (barFill.fillAmount < 1)
+                {
+                    Destroy(gameObject, 1.0f);
+                } else
+                {
+                    Destroy(gameObject);
+                }
             }
 
             if(changeSpriteAfterDrag)
