@@ -1,0 +1,14 @@
+:root {
+}
+
+.menuButton {
+    transition-duration: 0.1s;
+}
+
+.menuButton:hover {
+    filter: tint(rgb(178, 178, 178));
+}
+
+.menuButton:focus {
+    filter: tint(rgb(178, 178, 178));
+}
