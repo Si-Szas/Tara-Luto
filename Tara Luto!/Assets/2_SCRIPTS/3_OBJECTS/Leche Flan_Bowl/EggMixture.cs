@@ -51,7 +51,7 @@ public class EggMixture : MonoBehaviour
 
             if (progressBar.fillAmount < mixThreshold)
             {
-                progressBar.fillAmount += 0.05f;
+                progressBar.fillAmount += 0.005f;
 
                 if(!isMixing)
                 {

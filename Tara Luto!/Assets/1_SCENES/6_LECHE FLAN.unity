@@ -7838,6 +7838,7 @@ MonoBehaviour:
   lerpSpeed: 5
   hasNextPhase: 1
   nextPhaseGameObject: {fileID: 267564867}
+  isSpawnable: 0
   addProgressAmountForNonDestroy: 0.2
   addProgressAmountForDestroy: 0.167
   objectToCollideWith: {fileID: 1655577886}
@@ -9133,6 +9134,7 @@ MonoBehaviour:
   lerpSpeed: 5
   hasNextPhase: 0
   nextPhaseGameObject: {fileID: 0}
+  isSpawnable: 0
   addProgressAmountForNonDestroy: 0.25
   addProgressAmountForDestroy: 0.167
   objectToCollideWith: {fileID: 2130118472}
@@ -9247,6 +9249,10 @@ PrefabInstance:
       propertyPath: barFill
       value: 
       objectReference: {fileID: 6300522404611328350}
+    - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
+      propertyPath: isSpawnable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
       propertyPath: objectToDragTo
       value: 

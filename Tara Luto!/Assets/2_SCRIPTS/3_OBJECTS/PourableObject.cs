@@ -16,7 +16,7 @@ public class PourableObject : MonoBehaviour
 
     [Header("Pour Speed")]
     [SerializeField] private float maxSafePourSpeed = 20f;
-    [SerializeField] private float fillRate = 0.15f;
+    [SerializeField] private float fillRate = 0.05f;
     [SerializeField] private float pourThreshold = 0.25f;
 
     [Header("Tracker")]
