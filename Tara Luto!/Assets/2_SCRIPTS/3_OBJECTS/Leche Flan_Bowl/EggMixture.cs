@@ -12,6 +12,8 @@ public class EggMixture : MonoBehaviour
     [SerializeField] Image progressBar;
     [SerializeField] GameObject nextPhase;
 
+    [SerializeField] private float mixThreshold = 0.5f;
+
     [SerializeField] AudioClip mixingSFX;
     private bool isMixing = false;
 
@@ -47,7 +49,7 @@ public class EggMixture : MonoBehaviour
         {
             animator.SetBool("isMixing", true);
 
-            if (progressBar.fillAmount < 0.5)
+            if (progressBar.fillAmount < mixThreshold)
             {
                 progressBar.fillAmount += 0.05f;
 

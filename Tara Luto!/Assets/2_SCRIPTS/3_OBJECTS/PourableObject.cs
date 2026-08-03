@@ -17,6 +17,7 @@ public class PourableObject : MonoBehaviour
     [Header("Pour Speed")]
     [SerializeField] private float maxSafePourSpeed = 20f;
     [SerializeField] private float fillRate = 0.15f;
+    [SerializeField] private float pourThreshold = 0.25f;
 
     [Header("Tracker")]
     [SerializeField] private Image barFill;
@@ -72,7 +73,7 @@ public class PourableObject : MonoBehaviour
         HandleProgressivePour(currentRotationSpeed);
 
         if (hasNextPhase) { 
-            if(barFill.fillAmount >= 0.25)
+            if(barFill.fillAmount >= pourThreshold)
             {
                 nextPhaseGameObject.SetActive(true);
                 transform.parent.gameObject.SetActive(false);

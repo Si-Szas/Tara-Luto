@@ -12,7 +12,10 @@ public class DraggableObject : MonoBehaviour
     [SerializeField] private float lerpSpeed = 5.0f;
     [SerializeField] private bool hasNextPhase = false;
     [SerializeField] private GameObject nextPhaseGameObject;
-    [SerializeField] private float progressThreshold;
+
+    [Header("Progress Add")]
+    [SerializeField] private float addProgressAmountForNonDestroy = 0.25f;
+    [SerializeField] private float addProgressAmountForDestroy = 0.167f;
 
     [Header("Object to Collide With")]
     [SerializeField] private GameObject objectToCollideWith;
@@ -118,9 +121,9 @@ public class DraggableObject : MonoBehaviour
                 if(!destroyAfterCollide)
                 {
                     lerpBack = false;
-                    barFill.fillAmount += 0.25f;
+                    barFill.fillAmount += addProgressAmountForNonDestroy;
                 } else {
-                    barFill.fillAmount += 0.167f;
+                    barFill.fillAmount += addProgressAmountForDestroy;
                 }
 
                 if (hasNextPhase)
