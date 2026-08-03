@@ -454,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8830985434786358867, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1167,7 +1167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 267564868}
   m_Layer: 0
-  m_Name: 2
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PourableObject
   prepStepManager: {fileID: 4238039720081408718}
   hasNextPhase: 1
-  nextPhaseGameObject: {fileID: 267564867}
+  nextPhaseGameObject: {fileID: 1832382754}
   maxTiltAngle: 80
   tiltSensitivity: 4
   pourThresholdAngle: 35
@@ -4589,7 +4589,7 @@ MonoBehaviour:
   sprite2: {fileID: 8982102675406062375, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
   sprite3: {fileID: 8982102675406062375, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
   progressBar: {fileID: 6300522403598021765}
-  nextPhase: {fileID: 1832382754}
+  nextPhase: {fileID: 1943276180}
   mixingSFX: {fileID: 0}
 --- !u!1 &1243149896
 GameObject:
@@ -5636,7 +5636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1545702532
 Transform:
   m_ObjectHideFlags: 0
@@ -6531,7 +6531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832382755}
   m_Layer: 0
-  m_Name: 3
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7372,7 +7372,7 @@ MonoBehaviour:
   destroyAfterCollide: 0
   lerpSpeed: 5
   hasNextPhase: 1
-  nextPhaseGameObject: {fileID: 1943276180}
+  nextPhaseGameObject: {fileID: 267564867}
   progressThreshold: 0.5
   objectToCollideWith: {fileID: 1655577886}
   changeSpriteAfterDrag: 0
@@ -8328,8 +8328,8 @@ Transform:
   m_Children:
   - {fileID: 9086494999152211388}
   - {fileID: 1545702532}
-  - {fileID: 267564868}
   - {fileID: 1832382755}
+  - {fileID: 267564868}
   - {fileID: 1943276181}
   - {fileID: 1630010497532566652}
   m_Father: {fileID: 0}
@@ -8680,7 +8680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2737181085387405533
 GameObject:
   m_ObjectHideFlags: 0
