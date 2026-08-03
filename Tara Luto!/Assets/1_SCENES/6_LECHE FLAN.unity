@@ -1196,7 +1196,7 @@ PrefabInstance:
     - target: {fileID: 664578323077491288, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 3454959802066190957, guid: 71ca4c1b48ff1b440a8757945ecdc0ba, type: 3}
+      objectReference: {fileID: 1701897168}
     - target: {fileID: 664578323077491288, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
@@ -1459,7 +1459,7 @@ PrefabInstance:
     - target: {fileID: 9020771482826299934, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 3454959802066190957, guid: 71ca4c1b48ff1b440a8757945ecdc0ba, type: 3}
+      objectReference: {fileID: 1701897168}
     - target: {fileID: 9020771482826299934, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
@@ -5793,7 +5793,7 @@ PrefabInstance:
     - target: {fileID: 9020771482826299934, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 3454959802066190957, guid: 71ca4c1b48ff1b440a8757945ecdc0ba, type: 3}
+      objectReference: {fileID: 1701897168}
     - target: {fileID: 9020771482826299934, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
@@ -8817,7 +8817,7 @@ PrefabInstance:
     - target: {fileID: 9020771482826299934, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 3454959802066190957, guid: 71ca4c1b48ff1b440a8757945ecdc0ba, type: 3}
+      objectReference: {fileID: 1701897168}
     - target: {fileID: 9020771482826299934, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
