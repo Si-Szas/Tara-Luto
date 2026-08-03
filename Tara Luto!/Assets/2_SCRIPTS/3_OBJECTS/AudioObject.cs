@@ -6,6 +6,14 @@ public class AudioObject : MonoBehaviour
     [SerializeField] float volume = 1.0f;
     [SerializeField] float pitch = 1.0f;
     [SerializeField] bool isLoopable = false;
+    [SerializeField] bool playOnStart = false;
+
+    private void Start()
+    {
+        if(playOnStart) {
+            AudioManager.Instance.PlaySFX(sfx, volume, pitch, isLoopable);
+        }
+    }
 
     private void OnEnable()
     {

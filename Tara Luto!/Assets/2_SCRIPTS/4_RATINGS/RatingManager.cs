@@ -53,13 +53,21 @@ public class RatingManager : MonoBehaviour
 
         switch (totalStars)
         {
-            case 0: resultText.text = "TRY AGAIN :(";
+            case 0:
+                AudioManager.Instance.PlayStars0SFX();
+                resultText.text = "TRY AGAIN :(";
                 break;
-            case 1: resultText.text = "NICE TRY";
+            case 1:
+                AudioManager.Instance.PlayStars1SFX();
+                resultText.text = "NICE TRY";
                 break;
-            case 2: resultText.text = "GOOD JOB!";
+            case 2:
+                AudioManager.Instance.PlayStars2SFX();
+                resultText.text = "GOOD JOB!";
                 break;
-            case 3: resultText.text = "PERFECT!!";
+            case 3:
+                AudioManager.Instance.PlayPerfectSFX();
+                resultText.text = "PERFECT!!";
                 break;
         }
 

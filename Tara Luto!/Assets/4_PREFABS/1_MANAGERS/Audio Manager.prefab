@@ -45,7 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   audioSourceSimultaneousMax: 10
+  sceneBGMSource: {fileID: 0}
   correctSFX: {fileID: 8300000, guid: 4263936449ecb05429b22503405a86d8, type: 3}
   mistakeSFX: {fileID: 8300000, guid: b887c35a0c5e4034ea8a5f696752cea1, type: 3}
-  buttonClickSFX: {fileID: 8300000, guid: 72150b037cd5edb4795207bfcda4a715, type: 3}
-  closeMenuSFX: {fileID: 8300000, guid: 2d67115f69358ed4b9b3fc82938d2bc2, type: 3}
+  buttonClickSFX: {fileID: 8300000, guid: 2d67115f69358ed4b9b3fc82938d2bc2, type: 3}
+  stars3SFX: {fileID: 8300000, guid: 24e7d05ca8bc590408790cd7490046f1, type: 3}
+  stars2SFX: {fileID: 8300000, guid: 4953b287d73730c40907d6547f401ddb, type: 3}
+  stars1SFX: {fileID: 8300000, guid: afb7f2d60dab28843ae345f9f3e1ef70, type: 3}
+  stars0SFX: {fileID: 8300000, guid: 5eb9b7184886da5479b51e25adc5e3bd, type: 3}
+  affirmativeSFX: {fileID: 8300000, guid: 5642a45cfd883f54a87ad7a58cf62644, type: 3}

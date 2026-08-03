@@ -12,7 +12,7 @@ public class PrepRating : MonoBehaviour
     //Default
     [SerializeField] GameObject textObject;
     TextMeshProUGUI feedbackText;
-
+    
     private List<UnityEngine.UI.Image> stars = new List<UnityEngine.UI.Image>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -48,10 +48,18 @@ public class PrepRating : MonoBehaviour
             starCount++;
         }
 
-        for (int i = 0; i < starCount; i++)
+        switch(starCount)
         {
-            stars[i].sprite = litStar;
+            case 1: AudioManager.Instance.PlayStars1SFX(); break;
+            case 2: AudioManager.Instance.PlayStars2SFX(); break;
+            case 3: AudioManager.Instance.PlayPerfectSFX(); break;
+            default: AudioManager.Instance.PlayStars0SFX(); break;
         }
+
+            for (int i = 0; i < starCount; i++)
+            {
+                stars[i].sprite = litStar;
+            }
 
         ratingManager.AddToOverallRating(starCount);
     }

@@ -389,14 +389,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3454959802066190957, guid: 71ca4c1b48ff1b440a8757945ecdc0ba, type: 3}
-      propertyPath: buttonClickSFX
-      value: 
-      objectReference: {fileID: 8300000, guid: 2d67115f69358ed4b9b3fc82938d2bc2, type: 3}
-    - target: {fileID: 3454959802066190957, guid: 71ca4c1b48ff1b440a8757945ecdc0ba, type: 3}
-      propertyPath: sceneBGMSource
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3704508399550415403, guid: 71ca4c1b48ff1b440a8757945ecdc0ba, type: 3}
       propertyPath: m_Name
       value: Audio Manager

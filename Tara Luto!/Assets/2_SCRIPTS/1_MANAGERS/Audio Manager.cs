@@ -15,6 +15,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip correctSFX;
     [SerializeField] private AudioClip mistakeSFX;
     [SerializeField] private AudioClip buttonClickSFX;
+    [SerializeField] private AudioClip stars3SFX;
+    [SerializeField] private AudioClip stars2SFX;
+    [SerializeField] private AudioClip stars1SFX;
+    [SerializeField] private AudioClip stars0SFX;
+    [SerializeField] private AudioClip affirmativeSFX;
     //[SerializeField] private AudioClip closeMenuSFX;
 
     private AudioSource[] sfxSources;
@@ -144,7 +149,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = correctSFX;
-            availableSource.volume = 1.0f;
+            availableSource.volume = 0.75f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -164,7 +169,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = mistakeSFX;
-            availableSource.volume = 1.0f;
+            availableSource.volume = 0.75f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -184,6 +189,106 @@ public class AudioManager : MonoBehaviour
         {
             availableSource.clip = buttonClickSFX;
             availableSource.volume = 1.0f;
+            availableSource.pitch = 1.0f;
+            availableSource.loop = false;
+            availableSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Maximum simultaneous sounds reached!");
+        }
+    }
+
+    public void PlayPerfectSFX()
+    {
+        if (stars3SFX == null) return;
+
+        AudioSource availableSource = GetAvailableSource();
+
+        if (availableSource != null)
+        {
+            availableSource.clip = stars3SFX;
+            availableSource.volume = 0.75f;
+            availableSource.pitch = 1.0f;
+            availableSource.loop = false;
+            availableSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Maximum simultaneous sounds reached!");
+        }
+    }
+
+    public void PlayStars2SFX()
+    {
+        if (stars2SFX == null) return;
+
+        AudioSource availableSource = GetAvailableSource();
+
+        if (availableSource != null)
+        {
+            availableSource.clip = stars2SFX;
+            availableSource.volume = 0.75f;
+            availableSource.pitch = 1.0f;
+            availableSource.loop = false;
+            availableSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Maximum simultaneous sounds reached!");
+        }
+    }
+
+    public void PlayStars1SFX()
+    {
+        if (stars1SFX == null) return;
+
+        AudioSource availableSource = GetAvailableSource();
+
+        if (availableSource != null)
+        {
+            availableSource.clip = stars1SFX;
+            availableSource.volume = 0.75f;
+            availableSource.pitch = 1.0f;
+            availableSource.loop = false;
+            availableSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Maximum simultaneous sounds reached!");
+        }
+    }
+
+    public void PlayStars0SFX()
+    {
+        if (stars0SFX == null) return;
+
+        AudioSource availableSource = GetAvailableSource();
+
+        if (availableSource != null)
+        {
+            availableSource.clip = stars0SFX;
+            availableSource.volume = 0.75f;
+            availableSource.pitch = 1.0f;
+            availableSource.loop = false;
+            availableSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Maximum simultaneous sounds reached!");
+        }
+    }
+
+    public void PlayAffirmativeVoiceSFX()
+    {
+        if (affirmativeSFX == null) return;
+
+        AudioSource availableSource = GetAvailableSource();
+
+        if (availableSource != null)
+        {
+            availableSource.clip = affirmativeSFX;
+            availableSource.volume = 0.75f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
