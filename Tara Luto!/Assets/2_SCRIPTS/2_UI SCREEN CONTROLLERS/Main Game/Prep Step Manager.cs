@@ -15,7 +15,7 @@ public class PrepStepManager : MonoBehaviour
 
     private bool isCounting = false;
     private float timer = 0f;
-    private float timerMax = 30f;
+    [SerializeField] private float timerMax = 30f;
 
     // Update is called once per frame
     void Update()

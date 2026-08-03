@@ -60,7 +60,5 @@ public class PrepRating : MonoBehaviour
     private void PopulateList()
     {
         stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
-        feedbackText = textObject.GetComponent<TextMeshProUGUI>();
-        feedbackText.text = "Hmmm...let's...let's just move on...";
     }
 }

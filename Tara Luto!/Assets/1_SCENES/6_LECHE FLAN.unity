@@ -2321,8 +2321,8 @@ MonoBehaviour:
   tiltSensitivity: 4
   pourThresholdAngle: 35
   maxSafePourSpeed: 40
-  fillRate: 0.05
-  pourThreshold: 0.4
+  fillRate: 0.08
+  pourThreshold: 0.6
   barFill: {fileID: 6300522403598021765}
   pourSFX: {fileID: 8300000, guid: ba54dab398066e84681f2b0a200c31ac, type: 3}
 --- !u!1 &537549118
@@ -4853,6 +4853,8 @@ MonoBehaviour:
   nextPhase: {fileID: 992864232}
   mixThreshold: 0.5
   mixingSFX: {fileID: 8300000, guid: 377834fd1bff16945a56e8b50a7eb4b0, type: 3}
+  hasBackgroundSFX: 0
+  backgroundSFX: {fileID: 0}
 --- !u!1 &1243149896
 GameObject:
   m_ObjectHideFlags: 0
@@ -5964,8 +5966,10 @@ MonoBehaviour:
   sprite3: {fileID: -1188427084614338660, guid: 853ce4ffa0ac7f8478b07189f703dcf6, type: 3}
   progressBar: {fileID: 6300522403598021765}
   nextPhase: {fileID: 1545702531}
-  mixThreshold: 0.2
+  mixThreshold: 0.3
   mixingSFX: {fileID: 8300000, guid: 377834fd1bff16945a56e8b50a7eb4b0, type: 3}
+  hasBackgroundSFX: 1
+  backgroundSFX: {fileID: 8300000, guid: 52990e1636ec702498b8091d2e94a34e, type: 3}
 --- !u!1 &1502538278
 GameObject:
   m_ObjectHideFlags: 0
@@ -6449,9 +6453,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaitFor
   progressBar: {fileID: 6300522403598021765}
-  increaseProgressBy: 0.08
-  progressThreshold: 0.8
+  increaseProgressBy: 0.05
+  progressThreshold: 0.9
   nextPhaseGameObject: {fileID: 1943276180}
+  whileWaitingSFX: {fileID: 8300000, guid: c5c56200f0f6a0c4e8ce3ce2f9e90c0d, type: 3}
+  onEnableSFX: {fileID: 8300000, guid: 7e70dd7d32fc51c45a7b7d9e2ab6c451, type: 3}
 --- !u!212 &1594164835
 SpriteRenderer:
   serializedVersion: 2
@@ -7585,7 +7591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
       propertyPath: addProgressAmountForNonDestroy
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 6119605590207752555, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
       propertyPath: m_Sprite
@@ -7672,7 +7678,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 6fc55437bb07d6943be6ffce6fe7da1c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 805182c1064ba274cb71cf1cb422df55, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8258,7 +8264,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 6fc55437bb07d6943be6ffce6fe7da1c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 302a7e8f247be434f8ce6bc5640d212b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8362,7 +8368,7 @@ MonoBehaviour:
   hasNextPhase: 1
   nextPhaseGameObject: {fileID: 267564867}
   isSpawnable: 0
-  addProgressAmountForNonDestroy: 0.2
+  addProgressAmountForNonDestroy: 0.05
   addProgressAmountForDestroy: 0.167
   objectToCollideWith: {fileID: 1655577886}
   changeSpriteAfterDrag: 0
@@ -8855,6 +8861,7 @@ GameObject:
   - component: {fileID: 2130118473}
   - component: {fileID: 2130118475}
   - component: {fileID: 2130118474}
+  - component: {fileID: 2130118476}
   m_Layer: 0
   m_Name: Refrigerator
   m_TagString: Collide With
@@ -8982,6 +8989,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2130118476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130118472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb6345bab4eb0d4db48ef258003a00a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioObject
+  sfx: {fileID: 8300000, guid: c798f7a26a5f64c4ab533c870ea944f7, type: 3}
+  volume: 0.25
+  pitch: 1
+  isLoopable: 1
 --- !u!1 &2140471748
 GameObject:
   m_ObjectHideFlags: 0
@@ -10191,6 +10214,7 @@ MonoBehaviour:
   timerFill: {fileID: 6207695847288915060}
   timerHand: {fileID: 1860179494083777345}
   barFill: {fileID: 6300522404611328350}
+  timerMax: 30
 --- !u!114 &4238039719026687766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10235,6 +10259,7 @@ MonoBehaviour:
   timerFill: {fileID: 6207695848385870255}
   timerHand: {fileID: 1860179493032980122}
   barFill: {fileID: 6300522403598021765}
+  timerMax: 30
 --- !u!114 &4435298994472909863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10426,7 +10451,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 6fc55437bb07d6943be6ffce6fe7da1c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 504a2b3c0b0e990418ddeb82f4456131, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

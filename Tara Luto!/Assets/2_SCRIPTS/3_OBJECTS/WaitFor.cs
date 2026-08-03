@@ -12,6 +12,15 @@ public class WaitFor : MonoBehaviour
     //[SerializeField] private bool hasNextPhase;
     [SerializeField] private GameObject nextPhaseGameObject;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip whileWaitingSFX;
+    [SerializeField] private AudioClip onEnableSFX;
+
+    private void OnEnable()
+    {
+        AudioManager.Instance.PlaySFX(onEnableSFX, 0.5f);
+        AudioManager.Instance.PlaySFX(whileWaitingSFX, 0.75f, 1.0f, true);
+    }
     void Update()
     {
         progressBar.fillAmount += increaseProgressBy * Time.deltaTime;
@@ -22,5 +31,10 @@ public class WaitFor : MonoBehaviour
             transform.parent.gameObject.SetActive(false);
         }
 
+    }
+
+    private void OnDisable()
+    {
+        AudioManager.Instance.StopSFX(whileWaitingSFX);
     }
 }

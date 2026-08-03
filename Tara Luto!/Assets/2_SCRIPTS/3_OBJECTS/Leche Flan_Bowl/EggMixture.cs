@@ -15,6 +15,8 @@ public class EggMixture : MonoBehaviour
     [SerializeField] private float mixThreshold = 0.5f;
 
     [SerializeField] AudioClip mixingSFX;
+    [SerializeField] bool hasBackgroundSFX = false;
+    [SerializeField] AudioClip backgroundSFX;
     private bool isMixing = false;
 
     private bool isTracking = false;
@@ -27,6 +29,11 @@ public class EggMixture : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (hasBackgroundSFX)
+        {
+            AudioManager.Instance.PlaySFX(backgroundSFX, 0.5f, 1.0f, true);
+        }
     }
 
     void Update()
@@ -74,6 +81,10 @@ public class EggMixture : MonoBehaviour
                 animator.SetBool("isMixing", false);
                 spriteRenderer.sprite = sprite1;
                 transform.parent.gameObject.SetActive(false);
+
+                if (hasBackgroundSFX) { 
+                    AudioManager.Instance.StopSFX(backgroundSFX);
+                }
             }
         } else
         {
