@@ -12,6 +12,7 @@ public class DraggableObject : MonoBehaviour
     [SerializeField] private float lerpSpeed = 5.0f;
     [SerializeField] private bool hasNextPhase = false;
     [SerializeField] private GameObject nextPhaseGameObject;
+    [SerializeField] private bool isSpawnable = false;
 
     [Header("Progress Add")]
     [SerializeField] private float addProgressAmountForNonDestroy = 0.25f;
@@ -45,6 +46,11 @@ public class DraggableObject : MonoBehaviour
         {
             startPosition = transform.position;
         }
+
+        if (isSpawnable)
+        {
+            isDragging = true;
+        }
     }
 
     void Update()
@@ -55,17 +61,21 @@ public class DraggableObject : MonoBehaviour
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, Mathf.Abs(mainCamera.transform.position.z)));
         worldPos.z = 0f;
 
-        if (Pointer.current.press.wasPressedThisFrame)
-        {
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
-            if (hit.collider != null && hit.collider == myCollider)
+        if (!isSpawnable) { 
+            if (Pointer.current.press.wasPressedThisFrame)
             {
-                isDragging = true;
+                RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
+                if (hit.collider != null && hit.collider == myCollider)
+                {
+                    isDragging = true;
 
-                if (!destroyAfterCollide) 
-                { 
-                    lerpBack = false; 
+                    if (!destroyAfterCollide) 
+                    { 
+                        lerpBack = false; 
+                    }
                 }
+
+                transform.position = worldPos;
             }
         }
 
