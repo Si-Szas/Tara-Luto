@@ -1325,6 +1325,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -9191973350630979843, guid: abaccc9c474326547b674bb374a69a27, type: 3}
     - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+      propertyPath: textObject
+      value: 
+      objectReference: {fileID: 1341759791}
+    - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: ratingManager
       value: 
       objectReference: {fileID: 834305614}
@@ -1603,6 +1607,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &331314032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7202910445434575599, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+  m_PrefabInstance: {fileID: 1469923809}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &333547542 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 846627270824641662, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
@@ -1684,6 +1693,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputSystemManager
   playerInput: {fileID: 356252446}
+--- !u!1 &381928316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7202910445434575599, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+  m_PrefabInstance: {fileID: 1872935448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &401369157
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,6 +3604,10 @@ PrefabInstance:
       propertyPath: total
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 392998017224441824, guid: 0a406d2533de1e845a3fce2d116460a4, type: 3}
+      propertyPath: resultTextObject
+      value: 
+      objectReference: {fileID: 1392101826}
     - target: {fileID: 2734121514471798995, guid: 0a406d2533de1e845a3fce2d116460a4, type: 3}
       propertyPath: m_text
       value: Leche Flan!
@@ -4501,6 +4519,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1098819951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7202910445434575599, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+  m_PrefabInstance: {fileID: 2121555894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1108478571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5135,6 +5158,11 @@ Transform:
   - {fileID: 313388176}
   m_Father: {fileID: 1288356017194074900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1341759791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7202910445434575599, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+  m_PrefabInstance: {fileID: 241808345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1351752233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5495,6 +5523,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8830985434786358867, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
   m_PrefabInstance: {fileID: 1386119372}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1392101826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 427960627314031446, guid: 0a406d2533de1e845a3fce2d116460a4, type: 3}
+  m_PrefabInstance: {fileID: 834305613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1436223459
 GameObject:
   m_ObjectHideFlags: 0
@@ -5621,6 +5654,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1216376370736334566, guid: e817d202bd408534f902611d40447fb1, type: 3}
+    - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+      propertyPath: textObject
+      value: 
+      objectReference: {fileID: 331314032}
     - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: ratingManager
       value: 
@@ -7734,6 +7771,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8380204734794197966, guid: ab2e0480030d52442ac70c041bedc120, type: 3}
     - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+      propertyPath: textObject
+      value: 
+      objectReference: {fileID: 381928316}
+    - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: ratingManager
       value: 
       objectReference: {fileID: 834305614}
@@ -8641,6 +8682,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6456754810718487685, guid: 72ad8ccb413d00f48bdc1a996413b057, type: 3}
+    - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
+      propertyPath: textObject
+      value: 
+      objectReference: {fileID: 1098819951}
     - target: {fileID: 2502944509900312729, guid: 4cea926cdac4aaf4b9d208aad7d91334, type: 3}
       propertyPath: ratingManager
       value: 

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
@@ -9,6 +10,8 @@ public class RatingManager : MonoBehaviour
     [SerializeField] int total = 2;
     [SerializeField] Sprite litStar;
     [SerializeField] GameObject starsParent;
+    [SerializeField] GameObject resultTextObject;
+    TextMeshProUGUI resultText;
 
     private List<Image> stars = new List<Image>();
 
@@ -21,6 +24,8 @@ public class RatingManager : MonoBehaviour
     void Start()
     {
         stars.AddRange(starsParent.GetComponentsInChildren<Image>());
+
+        resultText = resultTextObject.GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
@@ -44,6 +49,18 @@ public class RatingManager : MonoBehaviour
         for (int i = 0; i < totalStars; i++)
         {
             stars[i].sprite = litStar;  
+        }
+
+        switch (totalStars)
+        {
+            case 0: resultText.text = "TRY AGAIN :(";
+                break;
+            case 1: resultText.text = "NICE TRY";
+                break;
+            case 2: resultText.text = "GOOD JOB!";
+                break;
+            case 3: resultText.text = "PERFECT!!";
+                break;
         }
 
         totalled = true;

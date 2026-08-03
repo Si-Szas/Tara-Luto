@@ -2,12 +2,16 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class PrepRating : MonoBehaviour
 {
     [SerializeField] Sprite litStar;
     [SerializeField] RatingManager ratingManager;
     [SerializeField] GameObject starsParent;
+    //Default
+    [SerializeField] GameObject textObject;
+    TextMeshProUGUI feedbackText;
 
     private List<UnityEngine.UI.Image> stars = new List<UnityEngine.UI.Image>();
 
@@ -15,6 +19,8 @@ public class PrepRating : MonoBehaviour
     void Start()
     {
         stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
+        feedbackText = textObject.GetComponent<TextMeshProUGUI>();
+        feedbackText.text = "Hmmm...let's...let's just move on...";
     }
 
     public void LightStars(UnityEngine.UI.Image endProgress)
@@ -22,12 +28,21 @@ public class PrepRating : MonoBehaviour
         Debug.Log("Progress val: " + endProgress.fillAmount);
         int starCount = 0;
 
-        if (endProgress.fillAmount >= 0.3)
+        if (endProgress.fillAmount >= 0.3) 
+        {
+            feedbackText.text = "Nice try!";
             starCount++;
+        }
         if (endProgress.fillAmount >= 0.6)
+        {
+            feedbackText.text = "Good job! Let's move on to the next step!";
             starCount++;
+        }
         if (endProgress.fillAmount == 1.0)
+        {
+            feedbackText.text = "WOW! Ang galing mo!";
             starCount++;
+        }
 
         Debug.Log("Star val: " + starCount);
 
