@@ -1,5 +1,7 @@
-using UnityEngine;
+using System;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -189,7 +191,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void StopSFX(AudioClip clipToStop)
+    public void StopSFX(AudioClip clipToStop, float fadeDuration = 0.3f, bool enableFadeOut = true)
     {
         if (clipToStop == null) return;
 
@@ -199,9 +201,36 @@ public class AudioManager : MonoBehaviour
         {
             if (source.isPlaying && source.clip == clipToStop)
             {
-                source.Stop();
-                source.clip = null;
+                //Fade out the sfx
+                if (enableFadeOut) { 
+                    StartCoroutine(FadeOutAndStopCoroutine(source, fadeDuration));
+                } else {
+                    source.Stop();
+                    source.clip = null;
+                }
             }
+        }
+    }
+
+    private IEnumerator FadeOutAndStopCoroutine(AudioSource source, float duration)
+    {
+        float startVolume = source.volume;
+        float currentTime = 0f;
+
+        while (currentTime < duration)
+        {
+            if (source == null) yield break;
+
+            currentTime += Time.deltaTime;
+            source.volume = Mathf.Lerp(startVolume, 0f, currentTime / duration);
+            yield return null;
+        }
+
+        if (source != null)
+        {
+            source.Stop();
+            source.clip = null;
+            source.volume = startVolume; 
         }
     }
 

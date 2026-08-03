@@ -12,6 +12,9 @@ public class EggMixture : MonoBehaviour
     [SerializeField] Image progressBar;
     [SerializeField] GameObject nextPhase;
 
+    [SerializeField] AudioClip mixingSFX;
+    private bool isMixing = false;
+
     private bool isTracking = false;
     private bool isMoving = false;
 
@@ -37,6 +40,7 @@ public class EggMixture : MonoBehaviour
         {
             animator.SetBool("isMixing", false);
             isTracking = false;
+            AudioManager.Instance.StopSFX(mixingSFX);
         }
 
         if (isTracking && isMoving)
@@ -46,6 +50,13 @@ public class EggMixture : MonoBehaviour
             if (progressBar.fillAmount < 0.5)
             {
                 progressBar.fillAmount += 0.05f;
+
+                if(!isMixing)
+                {
+                    isMixing = true;
+                    AudioManager.Instance.PlaySFX(mixingSFX, 0.75f, 1.0f, true);
+                }
+
                 if (progressBar.fillAmount >= 0.16f && progressBar.fillAmount < 0.32)
                 {
                     Debug.Log("sprite 2");
@@ -56,11 +67,16 @@ public class EggMixture : MonoBehaviour
             }
             else
             {
+                AudioManager.Instance.StopSFX(mixingSFX);
                 nextPhase.SetActive(true);
                 animator.SetBool("isMixing", false);
                 spriteRenderer.sprite = sprite1;
                 transform.parent.gameObject.SetActive(false);
             }
+        } else
+        {
+            AudioManager.Instance.StopSFX(mixingSFX);
+            isMixing = false;
         }
     }
 

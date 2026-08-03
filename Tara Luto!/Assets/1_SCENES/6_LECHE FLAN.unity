@@ -4434,6 +4434,7 @@ MonoBehaviour:
   sprite3: {fileID: 6456754810718487685, guid: 72ad8ccb413d00f48bdc1a996413b057, type: 3}
   progressBar: {fileID: 1573508314}
   nextPhase: {fileID: 992864232}
+  mixingSFX: {fileID: 8300000, guid: 377834fd1bff16945a56e8b50a7eb4b0, type: 3}
 --- !u!1 &1232675939
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +4567,7 @@ MonoBehaviour:
   sprite3: {fileID: 8982102675406062375, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
   progressBar: {fileID: 6300522403598021765}
   nextPhase: {fileID: 1832382754}
+  mixingSFX: {fileID: 0}
 --- !u!1 &1243149896
 GameObject:
   m_ObjectHideFlags: 0
