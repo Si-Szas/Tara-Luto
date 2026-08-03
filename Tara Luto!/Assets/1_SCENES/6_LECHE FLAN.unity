@@ -3433,11 +3433,11 @@ MonoBehaviour:
   maxTiltAngle: 80
   tiltSensitivity: 4
   pourThresholdAngle: 35
-  maxSafePourSpeed: 40
-  fillRate: 0.2
+  maxSafePourSpeed: 30
+  fillRate: 0.06
   pourThreshold: 0.4
   barFill: {fileID: 1573508314}
-  pourSFX: {fileID: 8300000, guid: ba54dab398066e84681f2b0a200c31ac, type: 3}
+  pourSFX: {fileID: 8300000, guid: 0bf3996cea8dede40957748e4513f79b, type: 3}
 --- !u!212 &830601217
 SpriteRenderer:
   serializedVersion: 2
