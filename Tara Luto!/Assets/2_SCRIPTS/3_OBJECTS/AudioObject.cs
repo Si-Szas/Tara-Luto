@@ -8,14 +8,12 @@ public class AudioObject : MonoBehaviour
     [SerializeField] bool isLoopable = false;
     [SerializeField] bool playOnStart = false;
     
-    private AudioManager audioManager;
-    private void Awake()
-    {
-        audioManager = AudioManager.Instance;
-    }
-
+    private AudioManager audioManager = AudioManager.Instance;
+ 
     private void Start()
     {
+        if (AudioManager.Instance == null) return;
+
         if(playOnStart) {
             audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
         }
@@ -23,11 +21,16 @@ public class AudioObject : MonoBehaviour
 
     private void OnEnable()
     {
-        audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
+        if(AudioManager.Instance != null) { 
+            audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
+        }
     }
 
     private void OnDisable()
     {
-        audioManager.StopSFX(sfx);
+        if (AudioManager.Instance != null)
+        {
+            audioManager.StopSFX(sfx);
+        }
     }
 }
