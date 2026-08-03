@@ -146,6 +146,7 @@ public class AudioManager : MonoBehaviour
             availableSource.clip = correctSFX;
             availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
+            availableSource.loop = false;
             availableSource.Play();
         }
         else
@@ -165,6 +166,7 @@ public class AudioManager : MonoBehaviour
             availableSource.clip = mistakeSFX;
             availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
+            availableSource.loop = false;
             availableSource.Play();
         }
         else
@@ -183,6 +185,7 @@ public class AudioManager : MonoBehaviour
             availableSource.clip = buttonClickSFX;
             availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
+            availableSource.loop = false;
             availableSource.Play();
         }
         else

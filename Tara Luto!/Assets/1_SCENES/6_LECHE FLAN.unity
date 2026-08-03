@@ -2663,6 +2663,7 @@ GameObject:
   - component: {fileID: 756153200}
   - component: {fileID: 756153202}
   - component: {fileID: 756153201}
+  - component: {fileID: 756153203}
   m_Layer: 0
   m_Name: Condensed Milk
   m_TagString: Untagged
@@ -2693,7 +2694,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756153199}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac5ea61080c4bdf44b9350664084e47d, type: 3}
   m_Name: 
@@ -2758,6 +2759,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &756153203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756153199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcab79666b5f9ec46adcaf5ef73e5208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PourableObject
+  prepStepManager: {fileID: 1573508313}
+  hasNextPhase: 0
+  nextPhaseGameObject: {fileID: 0}
+  maxTiltAngle: 60
+  tiltSensitivity: 5
+  pourThresholdAngle: 15
+  maxSafePourSpeed: 30
+  fillRate: 0.1
+  barFill: {fileID: 1573508314}
+  pourSFX: {fileID: 8300000, guid: ba54dab398066e84681f2b0a200c31ac, type: 3}
 --- !u!1001 &765165383
 PrefabInstance:
   m_ObjectHideFlags: 0
