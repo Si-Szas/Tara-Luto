@@ -25,8 +25,13 @@ public class PrepRating : MonoBehaviour
 
     public void LightStars(UnityEngine.UI.Image endProgress)
     {
-        Debug.Log("Progress val: " + endProgress.fillAmount);
         int starCount = 0;
+
+        if (stars == null || stars.Count == 0 || feedbackText == null)
+        {
+            stars.Clear();
+            PopulateList();
+        }
 
         if (endProgress.fillAmount >= 0.3) 
         {
@@ -44,14 +49,6 @@ public class PrepRating : MonoBehaviour
             starCount++;
         }
 
-        Debug.Log("Star val: " + starCount);
-
-        if (stars == null || stars.Count == 0)
-        {
-            stars.Clear();
-            PopulateList(); 
-        }
-
         for (int i = 0; i < starCount; i++)
         {
             stars[i].sprite = litStar;
@@ -63,5 +60,7 @@ public class PrepRating : MonoBehaviour
     private void PopulateList()
     {
         stars.AddRange(starsParent.GetComponentsInChildren<UnityEngine.UI.Image>());
+        feedbackText = textObject.GetComponent<TextMeshProUGUI>();
+        feedbackText.text = "Hmmm...let's...let's just move on...";
     }
 }
