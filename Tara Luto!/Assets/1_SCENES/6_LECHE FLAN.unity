@@ -2658,6 +2658,14 @@ MonoBehaviour:
   barFill: {fileID: 6300522403598021765}
   pourSFX: {fileID: 8300000, guid: ba54dab398066e84681f2b0a200c31ac, type: 3}
   pourObject: {fileID: 1883949039}
+  changesOtherSprite: 1
+  otherObjectToPourInto: {fileID: 464909314}
+  changeSpriteThresholds:
+  - 0.4
+  - 0.5
+  gameSprites:
+  - {fileID: 1054572536992354007, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
+  - {fileID: 8982102675406062375, guid: 4c7c7d679f03ee943abc27472f2e801e, type: 3}
 --- !u!1 &537549118
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,7 +3077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &613812798
 Transform:
   m_ObjectHideFlags: 0
@@ -3986,6 +3994,10 @@ MonoBehaviour:
   barFill: {fileID: 1573508314}
   pourSFX: {fileID: 8300000, guid: 0bf3996cea8dede40957748e4513f79b, type: 3}
   pourObject: {fileID: 1908708110}
+  changesOtherSprite: 0
+  otherObjectToPourInto: {fileID: 0}
+  changeSpriteThresholds: []
+  gameSprites: []
 --- !u!212 &830601217
 SpriteRenderer:
   serializedVersion: 2
@@ -7224,7 +7236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1545702532
 Transform:
   m_ObjectHideFlags: 0

@@ -27,6 +27,10 @@ public class PourableObject : MonoBehaviour
 
     [Header("Pour Object")]
     [SerializeField] GameObject pourObject;
+    [SerializeField] bool changesOtherSprite = false;
+    [SerializeField] GameObject otherObjectToPourInto;
+    [SerializeField] float[] changeSpriteThresholds;
+    [SerializeField] Sprite[] gameSprites;
 
     private float currentRotation = 0f;
     private float lastFrameRotation = 0f;
@@ -82,6 +86,17 @@ public class PourableObject : MonoBehaviour
 
         //Fill up progress bar
         HandleProgressivePour(currentRotationSpeed);
+        
+        if(changesOtherSprite)
+        {
+            for(int i = 0; i < changeSpriteThresholds.Length; i++)
+            {
+                if(barFill.fillAmount >= changeSpriteThresholds[i])
+                {
+                    otherObjectToPourInto.GetComponent<SpriteRenderer>().sprite = gameSprites[i];
+                }
+            }
+        }
 
         if (hasNextPhase) { 
             if(barFill.fillAmount >= pourThreshold)
