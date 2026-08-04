@@ -14,6 +14,11 @@ public class DraggableObject : MonoBehaviour
     [SerializeField] private GameObject nextPhaseGameObject;
     [SerializeField] private bool isSpawnable = false;
 
+    [Header("To Spawn")]
+    [SerializeField] private bool spawnsAfterCollide = false;
+    [SerializeField] private GameObject objectToSpawnAfterCollide;
+    [SerializeField] private GameObject spawnedGameObject;
+
     [Header("Progress Add")]
     [SerializeField] private float addProgressAmountForNonDestroy = 0.25f;
     [SerializeField] private float addProgressAmountForDestroy = 0.167f;
@@ -111,6 +116,7 @@ public class DraggableObject : MonoBehaviour
         if(deactivatesIfPrepStep && prepStepManager.transform.gameObject.activeSelf == false)
         {
             Destroy(gameObject);
+            Destroy(spawnedGameObject);
         }
     }
 
@@ -176,6 +182,13 @@ public class DraggableObject : MonoBehaviour
             if(changeSpriteAfterDrag)
             {
                 mySpriteRenderer.sprite = spriteChangeAfterDrag;
+
+                GameObject spawnedObject = Instantiate(objectToSpawnAfterCollide, new Vector3(transform.position.x, (transform.position.y - 0.86f), transform.position.z), Quaternion.identity);
+                spawnedObject.SetActive(true);
+
+                spawnedGameObject = spawnedObject;
+
+                Destroy(spawnedObject, 1.0f);
             }
         }
 
