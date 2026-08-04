@@ -208,7 +208,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = stars3SFX;
-            availableSource.volume = 0.75f;
+            availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -228,7 +228,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = stars2SFX;
-            availableSource.volume = 0.75f;
+            availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -248,7 +248,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = stars1SFX;
-            availableSource.volume = 0.75f;
+            availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -268,7 +268,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = stars0SFX;
-            availableSource.volume = 0.75f;
+            availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -288,7 +288,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = affirmativeSFX;
-            availableSource.volume = 0.75f;
+            availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();

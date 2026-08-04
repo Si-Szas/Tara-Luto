@@ -12,8 +12,6 @@ public class AudioObject : MonoBehaviour
  
     private void Start()
     {
-        if (AudioManager.Instance == null) return;
-
         if(playOnStart) {
             audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
         }
@@ -21,16 +19,11 @@ public class AudioObject : MonoBehaviour
 
     private void OnEnable()
     {
-        if(AudioManager.Instance != null) { 
-            audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
-        }
+        audioManager.PlaySFX(sfx, volume, pitch, isLoopable);
     }
 
     private void OnDisable()
     {
-        if (AudioManager.Instance != null)
-        {
-            audioManager.StopSFX(sfx);
-        }
+        audioManager.StopSFX(sfx);
     }
 }
