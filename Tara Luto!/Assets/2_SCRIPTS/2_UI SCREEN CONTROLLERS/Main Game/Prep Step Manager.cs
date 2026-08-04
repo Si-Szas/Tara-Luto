@@ -16,6 +16,17 @@ public class PrepStepManager : MonoBehaviour
     private bool isCounting = false;
     private float timer = 0f;
     [SerializeField] private float timerMax = 30f;
+    [SerializeField] private AudioClip clockSFX;
+
+    private void OnEnable()
+    {
+        AudioManager.Instance.PlaySFX(clockSFX, 0.5f, 1.0f, true);
+    }
+
+    private void OnDisable()
+    {
+        AudioManager.Instance.StopSFX(clockSFX);
+    }
 
     // Update is called once per frame
     void Update()
