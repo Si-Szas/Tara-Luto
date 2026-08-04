@@ -576,7 +576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8830985434786358867, guid: 3307eb2327c57a04f8705dde3edae0d7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2624,7 +2624,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2178266560513182720, guid: d0683e8828febc74f970eaabe465aa79, type: 3}
+  m_Sprite: {fileID: -6042202530123528117, guid: d5e0ffaafadac7a459e60dd0af5da567, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7477,7 +7477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2737181085483520381, guid: 0deff77cca0d6b24fabd61fad459b4b1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3196988163999935072, guid: 0deff77cca0d6b24fabd61fad459b4b1, type: 3}
       propertyPath: m_Sprite
