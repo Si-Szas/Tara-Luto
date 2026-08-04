@@ -17,7 +17,6 @@ public class DraggableObject : MonoBehaviour
     [Header("To Spawn")]
     [SerializeField] private bool spawnsAfterCollide = false;
     [SerializeField] private GameObject objectToSpawnAfterCollide;
-    [SerializeField] private GameObject spawnedGameObject;
 
     [Header("Progress Add")]
     [SerializeField] private float addProgressAmountForNonDestroy = 0.25f;
@@ -116,7 +115,6 @@ public class DraggableObject : MonoBehaviour
         if(deactivatesIfPrepStep && prepStepManager.transform.gameObject.activeSelf == false)
         {
             Destroy(gameObject);
-            Destroy(spawnedGameObject);
         }
     }
 
@@ -182,11 +180,11 @@ public class DraggableObject : MonoBehaviour
             if(changeSpriteAfterDrag)
             {
                 mySpriteRenderer.sprite = spriteChangeAfterDrag;
+                //so spawned object is a child of the egg
+                Vector3 spawnPosition = transform.position + new Vector3(0f, -0.5f, 0f); 
+                GameObject spawnedObject = Instantiate(objectToSpawnAfterCollide, spawnPosition, Quaternion.identity, transform);
 
-                GameObject spawnedObject = Instantiate(objectToSpawnAfterCollide, new Vector3(transform.position.x, (transform.position.y - 0.86f), transform.position.z), Quaternion.identity);
                 spawnedObject.SetActive(true);
-
-                spawnedGameObject = spawnedObject;
 
                 Destroy(spawnedObject, 1.0f);
             }
