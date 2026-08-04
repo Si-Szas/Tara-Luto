@@ -149,7 +149,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = correctSFX;
-            availableSource.volume = 0.75f;
+            availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -169,7 +169,7 @@ public class AudioManager : MonoBehaviour
         if (availableSource != null)
         {
             availableSource.clip = mistakeSFX;
-            availableSource.volume = 0.75f;
+            availableSource.volume = 1.0f;
             availableSource.pitch = 1.0f;
             availableSource.loop = false;
             availableSource.Play();
@@ -316,6 +316,22 @@ public class AudioManager : MonoBehaviour
                     source.Stop();
                     source.clip = null;
                 }
+            }
+        }
+    }
+
+    public void StopMistakeSFX()
+    {
+        if (mistakeSFX == null) return;
+
+        AudioSource[] sources = GetComponents<AudioSource>();
+
+        foreach (AudioSource source in sources)
+        {
+            if (source.isPlaying && source.clip == mistakeSFX)
+            {
+                source.Stop();
+                source.clip = null;
             }
         }
     }
