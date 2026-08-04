@@ -25,10 +25,20 @@ public class PourableObject : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioClip pourSFX;
 
+    [Header("Pour Object")]
+    [SerializeField] GameObject pourObject;
+
     private float currentRotation = 0f;
     private float lastFrameRotation = 0f;
 
     private bool isPouring = false;
+
+    private Animator pourAnimator;
+
+    private void Start()
+    {
+        pourAnimator = pourObject.GetComponent<Animator>();
+    }
 
     void OnEnable()
     {
@@ -62,6 +72,7 @@ public class PourableObject : MonoBehaviour
         currentRotation = Mathf.Lerp(currentRotation, targetRotation, Time.deltaTime * tiltSensitivity);
 
         transform.localRotation = Quaternion.Euler(0f, 0f, currentRotation);
+        HandlePourAnimation(currentRotation);
 
         //calculae speed of pour
         float angleDelta = Mathf.Abs(currentRotation - lastFrameRotation);
@@ -123,5 +134,31 @@ public class PourableObject : MonoBehaviour
                 AudioManager.Instance.StopSFX(pourSFX);
             }
         }
+    }
+
+    private void HandlePourAnimation(float rotation)
+    {
+        if (pourAnimator == null) GetAnimComp();
+
+        pourAnimator.SetBool("isPouring", isPouring);
+        if (isPouring) pourObject.SetActive(true);
+        else pourObject.SetActive(false);
+
+        if (rotation >= maxTiltAngle * 0.3 && rotation < maxTiltAngle * 0.6)
+        {
+            pourAnimator.SetFloat("tilt", 0.4f);
+        }
+        if (rotation >= maxTiltAngle*0.6)
+        {
+            pourAnimator.SetFloat("tilt", 0.7f);
+        } else
+        {
+            pourAnimator.SetFloat("tilt", 0f);
+        }
+    }
+
+    private void GetAnimComp()
+    {
+        pourAnimator = pourObject.GetComponent<Animator>();
     }
 }
