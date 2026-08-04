@@ -9789,6 +9789,7 @@ MonoBehaviour:
   changeSpriteAfterDrag: 0
   spriteChangeAfterDrag: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
+  deactivatesIfPrepStep: 0
   barFill: {fileID: 6300522403598021765}
 --- !u!212 &1971138284
 SpriteRenderer:
@@ -11292,6 +11293,7 @@ MonoBehaviour:
   changeSpriteAfterDrag: 0
   spriteChangeAfterDrag: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
+  deactivatesIfPrepStep: 0
   barFill: {fileID: 6300522403598021765}
 --- !u!1 &2737181084432794886
 GameObject:
@@ -11430,6 +11432,10 @@ PrefabInstance:
       objectReference: {fileID: 1818487687}
     - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
       propertyPath: changeSpriteAfterDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225797023918973566, guid: 3f4838382711a904c81dd88aa1713259, type: 3}
+      propertyPath: deactivatesIfPrepStep
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6120935955885005661, guid: 3f4838382711a904c81dd88aa1713259, type: 3}

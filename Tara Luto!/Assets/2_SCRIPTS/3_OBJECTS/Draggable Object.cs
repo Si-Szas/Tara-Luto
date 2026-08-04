@@ -25,6 +25,7 @@ public class DraggableObject : MonoBehaviour
     [SerializeField] private bool changeSpriteAfterDrag = false;
     [SerializeField] private Sprite spriteChangeAfterDrag;
     [SerializeField] private SpriteRenderer mySpriteRenderer;
+    [SerializeField] private bool deactivatesIfPrepStep = false;
 
     [Header("Progress Tracker")]
     [SerializeField] Image barFill;
@@ -105,6 +106,11 @@ public class DraggableObject : MonoBehaviour
         {
             nextPhaseGameObject.SetActive(true);
             transform.parent.gameObject.SetActive(false);
+        }
+
+        if(deactivatesIfPrepStep && prepStepManager.transform.gameObject.activeSelf == false)
+        {
+            Destroy(gameObject);
         }
     }
 
